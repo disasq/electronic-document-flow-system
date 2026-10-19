@@ -52,3 +52,8 @@ These directories are planned and will be added with their first meaningful arti
 Use individual accounts, task-linked branches and commits, and pull requests with peer review. Record actual contributions through commits, PRs and YouTrack issues. Do not fabricate authorship or mark unfinished work as complete.
 
 This repository is public. Do not commit credentials, real confidential documents or identifiable interview data; use synthetic/anonymized examples.
+
+## Project tracking
+[YouTrack project EDFS](https://saqypdias.youtrack.cloud/projects/EDFS) · [Task list](https://saqypdias.youtrack.cloud/projects/EDFS/issues)
+
+The first pre-defense plan is tracked in EDFS-1 through EDFS-11. Use the relevant issue ID in branch names, commit messages and pull requests. Ali’s YouTrack invitation is deferred; his intended ownership is documented in EDFS-1, EDFS-2 and EDFS-7 until his account is added. All tasks are initially To do.
