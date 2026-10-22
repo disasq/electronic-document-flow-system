@@ -1,0 +1,146 @@
+[
+  {
+    "local_id": "01",
+    "summary": "Validate departmental workflow with 3\u20135 user discussions",
+    "owner": "Dias",
+    "priority": "Critical",
+    "due": "2026-10-20",
+    "acceptance": "3\u20135 coded notes or substantive client agreement; consent and anonymised findings; assumptions updated",
+    "artifact": "02_relevance.md"
+  },
+  {
+    "local_id": "02",
+    "summary": "Review proposal and confirm project scope",
+    "owner": "Ali",
+    "priority": "High",
+    "due": "2026-10-21",
+    "acceptance": "Users and supervisor confirm one-stage route, exclusions and pilot boundaries",
+    "artifact": "01_proposal.md"
+  },
+  {
+    "local_id": "03",
+    "summary": "Deepen scientific review and verify source use",
+    "owner": "Dias",
+    "priority": "High",
+    "due": "2026-10-21",
+    "acceptance": "Eight scientific sources with verified metadata, critical synthesis and access limitations recorded",
+    "artifact": "03_literature.md"
+  },
+  {
+    "local_id": "04",
+    "summary": "Run build versus configure comparison spike",
+    "owner": "Dias",
+    "priority": "High",
+    "due": "2026-10-22",
+    "acceptance": "Test one mandatory journey in a candidate existing system and record fit and setup effort",
+    "artifact": "04_existing_systems.md"
+  },
+  {
+    "local_id": "05",
+    "summary": "Review technology decisions and implementation spike",
+    "owner": "Ali",
+    "priority": "Normal",
+    "due": "2026-10-22",
+    "acceptance": "Three decisions retain alternatives and requirement-based rationale; stack spike checked",
+    "artifact": "05_technology.md"
+  },
+  {
+    "local_id": "06",
+    "summary": "Baseline requirements and acceptance criteria",
+    "owner": "Ali",
+    "priority": "Critical",
+    "due": "2026-10-21",
+    "acceptance": "Every Must has source or agreed assumption and test ID; peer review recorded",
+    "artifact": "06_requirements.md"
+  },
+  {
+    "local_id": "07",
+    "summary": "Review architecture diagrams and schema",
+    "owner": "Ali",
+    "priority": "High",
+    "due": "2026-10-22",
+    "acceptance": "Context, UML use case and component diagrams align to requirements; editable exports checked",
+    "artifact": "07_architecture.md"
+  },
+  {
+    "local_id": "08",
+    "summary": "Review interactive prototype with representative users",
+    "owner": "Dias",
+    "priority": "High",
+    "due": "2026-10-22",
+    "acceptance": "Author, reviewer and admin journeys observed; usability issues logged and revised",
+    "artifact": "08_prototype.md"
+  },
+  {
+    "local_id": "09",
+    "summary": "Review evaluation plan and baseline tasks",
+    "owner": "Dias",
+    "priority": "High",
+    "due": "2026-10-22",
+    "acceptance": "Tasks, metrics, dataset and conditions accepted; outcomes remain unmeasured until study",
+    "artifact": "09_verification.md"
+  },
+  {
+    "local_id": "10",
+    "summary": "Obtain supervisor feedback and apply revisions",
+    "owner": "Ali",
+    "priority": "Critical",
+    "due": "2026-10-22",
+    "acceptance": "Real dated comments from Askar Khaimuldin linked to decisions, tasks and changed artifacts",
+    "artifact": "11_supervision_readiness.md"
+  },
+  {
+    "local_id": "11",
+    "summary": "Configure repository access and genuine contribution workflow",
+    "owner": "Ali",
+    "priority": "Critical",
+    "due": "2026-10-23",
+    "acceptance": "Both students use own accounts; supervisor and committee access checked; real peer PR review",
+    "artifact": "README.md"
+  },
+  {
+    "local_id": "12",
+    "summary": "Rehearse defense and tag reviewed submission",
+    "owner": "Dias",
+    "priority": "Critical",
+    "due": "2026-10-24",
+    "acceptance": "Both explain own changes; trace one task to PR; tag reviewed commit and submit limitation record",
+    "artifact": "management/submission_record.md"
+  },
+  {
+    "local_id": "13",
+    "summary": "Implement authenticated server vertical slice",
+    "owner": "Ali",
+    "priority": "High",
+    "due": "2026-11-06",
+    "acceptance": "Login, create, upload, submit and decision pass server policy and persistence tests",
+    "artifact": "FR01 FR02 FR03 FR04 FR06 FR07"
+  },
+  {
+    "local_id": "14",
+    "summary": "Implement immutable versions and concurrent decisions",
+    "owner": "Ali",
+    "priority": "High",
+    "due": "2026-11-13",
+    "acceptance": "Twenty concurrent decisions produce one commit; old versions remain intact",
+    "artifact": "FR05 FR08 FR12 NFR02"
+  },
+  {
+    "local_id": "15",
+    "summary": "Implement audit protection notifications and recovery",
+    "owner": "Ali",
+    "priority": "High",
+    "due": "2026-11-20",
+    "acceptance": "Outbox retry, protected audit and matched restore tests pass",
+    "artifact": "FR10 FR13 NFR04 NFR06"
+  },
+  {
+    "local_id": "16",
+    "summary": "Run exploratory user evaluation and report outcomes",
+    "owner": "Dias",
+    "priority": "High",
+    "due": "2026-11-27",
+    "acceptance": "Counterbalanced paired tasks, anonymised raw data, failure report and measured targets",
+    "artifact": "T20 NFR05"
+  }
+]

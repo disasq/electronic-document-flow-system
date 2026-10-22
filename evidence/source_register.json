@@ -1,0 +1,239 @@
+{
+  "checked": "2026-10-19",
+  "scope": "Targeted scoping review, not an exhaustive systematic review. Abstract-level limits are disclosed.",
+  "scientific": [
+    {
+      "id": "S01",
+      "authors": "D. Anggraini, K. Adi and J. E. Suseno",
+      "year": "2024",
+      "title": "Electronic document management systems implementation across industries systematic analysis",
+      "venue": "Indonesian Journal of Electrical Engineering and Computer Science 36(1), 264–273",
+      "url": "https://doi.org/10.11591/ijeecs.v36.i1.pp264-273",
+      "kind": "Scientific review",
+      "access": "Publisher abstract and citation record",
+      "method": "Cross-sector EDMS literature synthesis",
+      "finding": "Adoption depends on technical, individual and organisational factors as well as trust.",
+      "limitation": "Heterogeneous sectors cannot establish the needs of the proposed department.",
+      "project_use": "Add adoption questions to interviews and test the complete review journey."
+    },
+    {
+      "id": "S02",
+      "authors": "A. Anas and T. A. Salim",
+      "year": "2022",
+      "title": "Tinjauan literatur sistematis pemanfaatan electronic document management system bagi organisasi dalam menunjang manajemen pengetahuan",
+      "venue": "Berkala Ilmu Perpustakaan dan Informasi 18(2), 259–275",
+      "url": "https://doi.org/10.22146/bip.v18i2.5649",
+      "kind": "Scientific review",
+      "access": "Publisher abstract and method summary",
+      "method": "Review of ten EDMS studies from 2015–2020",
+      "finding": "Document storage, distribution and security support knowledge work alongside capable staff.",
+      "limitation": "Two databases and an older evidence window restrict coverage.",
+      "project_use": "Use searchable metadata and onboarding tasks rather than treating storage alone as success."
+    },
+    {
+      "id": "S03",
+      "authors": "H. Putra and M. Er",
+      "year": "2024",
+      "title": "The Role of Business Process Management in Digital Innovation and Digital Transformation A Systematic Literature Review",
+      "venue": "Procedia Computer Science 234, 829–836",
+      "url": "https://doi.org/10.1016/j.procs.2024.03.069",
+      "kind": "Scientific conference publication",
+      "access": "Publisher abstract and author manuscript identification",
+      "method": "Systematic review selecting 34 articles",
+      "finding": "Process management and digital transformation interact at organisational and technical levels.",
+      "limitation": "Broad BPM findings do not prove a particular document approval design will help.",
+      "project_use": "Model the existing and proposed process and evaluate task time against a baseline."
+    },
+    {
+      "id": "S04",
+      "authors": "A. K. Y. S. Mohamed, D. Auer, D. Hofer and J. Küng",
+      "year": "2022",
+      "title": "A systematic literature review for authorization and access control definitions strategies and models",
+      "venue": "International Journal of Web Information Systems 18(2/3), 156–180",
+      "url": "https://doi.org/10.1108/IJWIS-04-2022-0077",
+      "kind": "Scientific review",
+      "access": "Publisher abstract and findings summary",
+      "method": "Classification of access control models",
+      "finding": "Policy models and enforcement mechanisms need distinct definitions.",
+      "limitation": "A classification cannot establish that one implementation enforces its policy.",
+      "project_use": "Specify role plus ownership checks and test direct access to each protected resource."
+    },
+    {
+      "id": "S05",
+      "authors": "B. Q. Truong, A. Nguyen-Duc and N. T. C. Van",
+      "year": "2023",
+      "title": "A Quantitative Review of the Research on Business Process Management in Digital Transformation A Bibliometric Approach",
+      "venue": "Software 2(3), 377–399",
+      "url": "https://doi.org/10.3390/software2030018",
+      "kind": "Scientific review",
+      "access": "Publisher abstract and methods sections",
+      "method": "Bibliometric analysis of 326 papers from 2007–2022",
+      "finding": "BPM and transformation form a broad growing research field.",
+      "limitation": "Citation networks describe research attention rather than measured organisational benefit.",
+      "project_use": "Keep the project contribution narrow and evaluate observable workflow outcomes."
+    },
+    {
+      "id": "S06",
+      "authors": "F. Milani, K. Kubrak and J. Nava",
+      "year": "2024",
+      "title": "Strategic redesign of business processes in the digital age A framework",
+      "venue": "Data and Knowledge Engineering 154, 102367",
+      "url": "https://doi.org/10.1016/j.datak.2024.102367",
+      "kind": "Scientific research article",
+      "access": "Publisher abstract and conclusion excerpts",
+      "method": "Review of 40 process redesign case studies",
+      "finding": "Capabilities can inform process redesign beyond replacing existing technology.",
+      "limitation": "Cross-case mappings need local validation and do not predict our effect size.",
+      "project_use": "Use explicit ownership, a frozen review version and visible next action as redesign hypotheses."
+    },
+    {
+      "id": "S07",
+      "authors": "R. S. Sandhu, E. J. Coyne, H. L. Feinstein and C. E. Youman",
+      "year": "1996",
+      "title": "Role Based Access Control Models",
+      "venue": "Computer 29(2), 38–47",
+      "url": "https://doi.org/10.1109/2.485845",
+      "kind": "Scientific foundational article",
+      "access": "Author paper hosted by NIST",
+      "method": "Family of RBAC reference models",
+      "finding": "Permissions attach to roles and users receive role memberships.",
+      "limitation": "Basic role membership alone cannot express every document relationship.",
+      "project_use": "Combine a small role set with ownership and assignment predicates. Retained as a foundation."
+    },
+    {
+      "id": "S08",
+      "authors": "W. M. P. van der Aalst",
+      "year": "1998",
+      "title": "The Application of Petri Nets to Workflow Management",
+      "venue": "Journal of Circuits Systems and Computers 8(1), 21–66",
+      "url": "https://doi.org/10.1142/S0218126698000043",
+      "kind": "Scientific foundational article",
+      "access": "Author paper and academic bibliographic record",
+      "method": "Formal workflow modelling and verification",
+      "finding": "Explicit process logic supports reasoning about valid progress and termination.",
+      "limitation": "The proposed finite-state workflow is simpler and has not undergone a Petri-net proof.",
+      "project_use": "Enumerate transitions and test invalid paths and completion. Retained as a foundation."
+    }
+  ],
+  "official": [
+    {
+      "id": "S09",
+      "author": "Microsoft",
+      "title": "Require approval of documents in SharePoint using Power Automate",
+      "url": "https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/guidance/require-doc-approval",
+      "project_use": "Approval workflow and version ETag comparison"
+    },
+    {
+      "id": "S10",
+      "author": "Microsoft",
+      "title": "Restore a previous version of an item or file in SharePoint",
+      "url": "https://support.microsoft.com/en-us/sharepoint/documents-and-library/restore-a-previous-version-of-an-item-or-file-in-sharepoint",
+      "project_use": "Version history comparison"
+    },
+    {
+      "id": "S11",
+      "author": "Nextcloud",
+      "title": "Flow administration manual",
+      "url": "https://docs.nextcloud.com/server/stable/admin_manual/file_workflows/index.html",
+      "project_use": "Flow and access rules comparison"
+    },
+    {
+      "id": "S12",
+      "author": "Nextcloud",
+      "title": "Version control user manual",
+      "url": "https://docs.nextcloud.com/server/stable/user_manual/en/files/version_control.html",
+      "project_use": "Versions and automatic expiry comparison"
+    },
+    {
+      "id": "S13",
+      "author": "Mayan EDMS",
+      "title": "Features",
+      "url": "https://docs.mayan-edms.com/chapters/features.html",
+      "project_use": "Versions, metadata, permissions, workflows and API comparison"
+    },
+    {
+      "id": "S14",
+      "author": "Paperless ngx",
+      "title": "Basic Usage",
+      "url": "https://docs.paperless-ngx.com/usage/",
+      "project_use": "Workflow triggers, permissions and audit comparison"
+    },
+    {
+      "id": "S15",
+      "author": "Paperless ngx",
+      "title": "REST API",
+      "url": "https://docs.paperless-ngx.com/api/",
+      "project_use": "API comparison"
+    },
+    {
+      "id": "S16",
+      "author": "Django Software Foundation",
+      "title": "Security in Django and authentication system",
+      "url": "https://docs.djangoproject.com/en/5.2/topics/security/",
+      "project_use": "Framework choice and security design"
+    },
+    {
+      "id": "S17",
+      "author": "FastAPI",
+      "title": "Dependencies",
+      "url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+      "project_use": "Backend alternative"
+    },
+    {
+      "id": "S18",
+      "author": "NestJS",
+      "title": "Authorization",
+      "url": "https://docs.nestjs.com/security/authorization",
+      "project_use": "Backend alternative"
+    },
+    {
+      "id": "S19",
+      "author": "PostgreSQL",
+      "title": "Explicit Locking",
+      "url": "https://www.postgresql.org/docs/17/explicit-locking.html",
+      "project_use": "Transactional approval and concurrency design"
+    },
+    {
+      "id": "S20",
+      "author": "PostgreSQL",
+      "title": "Full Text Search Introduction",
+      "url": "https://www.postgresql.org/docs/current/textsearch-intro.html",
+      "project_use": "Database search alternative"
+    },
+    {
+      "id": "S21",
+      "author": "SQLite",
+      "title": "Appropriate Uses For SQLite",
+      "url": "https://www.sqlite.org/whentouse.html",
+      "project_use": "Database concurrency tradeoff"
+    },
+    {
+      "id": "S22",
+      "author": "MongoDB",
+      "title": "Transactions",
+      "url": "https://www.mongodb.com/docs/manual/core/transactions/",
+      "project_use": "Database alternative and transaction support"
+    },
+    {
+      "id": "S23",
+      "author": "MDN",
+      "title": "Overview of HTTP",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+      "project_use": "Request and response interaction design"
+    },
+    {
+      "id": "S24",
+      "author": "RabbitMQ",
+      "title": "Reliability Guide",
+      "url": "https://www.rabbitmq.com/docs/reliability",
+      "project_use": "Asynchronous interaction tradeoff"
+    },
+    {
+      "id": "S25",
+      "author": "OWASP",
+      "title": "File Upload Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html",
+      "project_use": "Upload validation, quarantine and storage design"
+    }
+  ]
+}
