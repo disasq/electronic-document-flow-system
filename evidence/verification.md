@@ -39,3 +39,5 @@ This delivery does not implement production login, server permissions, binary up
 ## Repeatability
 
 Use the README instructions to serve the prototype and run the 15 model checks. Reset demo data returns the original fictional records. Then follow `management/defense_script.md` or the two walkthroughs in `docs/08_prototype.md`. The examples and all browser evidence contain synthetic documents only.
+
+The final YouTrack task overview is retained as `youtrack-tasks.png`. EDFS-10 contains the PR and successful Actions links; its state is In progress. EDFS-1 and EDFS-11 are prioritized Critical, with actual user evidence and supervisor review still outstanding.
