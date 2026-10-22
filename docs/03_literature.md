@@ -1,0 +1,30 @@
+# Literature review
+
+## Review questions and selection
+This targeted scoping review asks which EDMS adoption issues matter, how workflow correctness should be represented, and how access control affects document processing. Searches on 19 October 2026 used combinations of electronic document management system, electronic records, workflow, business process management, digital transformation, authorization and access control. Publisher pages, author-hosted papers and official technical documentation were preferred.
+
+The scientific core contains eight publications. Six date from 2022–2024 and fall within the preceding five years. Two foundational papers from 1996 and 1998 explain RBAC and explicit workflow reasoning. Technical documentation supports implementation decisions but does not count toward the eight scientific publications. The complete register contains 25 meaningfully used sources.
+
+Selection required identifiable authors, a scholarly venue and a direct connection to the review questions. Broad promotional articles and unverifiable papers were excluded. This is not a claimed exhaustive database search or a PRISMA systematic review. Some publisher pages expose only abstracts and selected sections. The table states the inspected evidence, and no detailed findings beyond that evidence are asserted. Before final diploma submission, deepen the review with full texts and record any changed conclusions.
+
+## Structured analysis of scientific publications
+| Source | Method and inspected material | Finding and limitation | Design consequence |
+| S01 2024 | Cross-sector EDMS literature synthesis. Publisher abstract and citation record. | Adoption depends on technical, individual and organisational factors as well as trust. Heterogeneous sectors cannot establish the needs of the proposed department. | Add adoption questions to interviews and test the complete review journey. |
+| S02 2022 | Review of ten EDMS studies from 2015–2020. Publisher abstract and method summary. | Document storage, distribution and security support knowledge work alongside capable staff. Two databases and an older evidence window restrict coverage. | Use searchable metadata and onboarding tasks rather than treating storage alone as success. |
+| S03 2024 | Systematic review selecting 34 articles. Publisher abstract and author manuscript identification. | Process management and digital transformation interact at organisational and technical levels. Broad BPM findings do not prove a particular document approval design will help. | Model the existing and proposed process and evaluate task time against a baseline. |
+| S04 2022 | Classification of access control models. Publisher abstract and findings summary. | Policy models and enforcement mechanisms need distinct definitions. A classification cannot establish that one implementation enforces its policy. | Specify role plus ownership checks and test direct access to each protected resource. |
+| S05 2023 | Bibliometric analysis of 326 papers from 2007–2022. Publisher abstract and methods sections. | BPM and transformation form a broad growing research field. Citation networks describe research attention rather than measured organisational benefit. | Keep the project contribution narrow and evaluate observable workflow outcomes. |
+| S06 2024 | Review of 40 process redesign case studies. Publisher abstract and conclusion excerpts. | Capabilities can inform process redesign beyond replacing existing technology. Cross-case mappings need local validation and do not predict our effect size. | Use explicit ownership, a frozen review version and visible next action as redesign hypotheses. |
+| S07 1996 | Family of RBAC reference models. Author paper hosted by NIST. | Permissions attach to roles and users receive role memberships. Basic role membership alone cannot express every document relationship. | Combine a small role set with ownership and assignment predicates. Retained as a foundation. |
+| S08 1998 | Formal workflow modelling and verification. Author paper and academic bibliographic record. | Explicit process logic supports reasoning about valid progress and termination. The proposed finite-state workflow is simpler and has not undergone a Petri-net proof. | Enumerate transitions and test invalid paths and completion. Retained as a foundation. |
+
+## Critical synthesis
+EDMS reviews [S01, S02] support treating adoption and staff capability as part of the problem. They do not establish a local frequency of lost documents or a numerical efficiency gain. Accordingly, we retain usability and onboarding requirements and leave local relevance open until discussions occur.
+
+BPM work [S03, S05, S06] supports analysing a process before automating it. Bibliometric activity is not evidence that our system improves performance. The project therefore selects concrete tasks and a baseline rather than claiming innovation because it uses a web interface. The custom-system hypothesis is a small, visible approval journey with ownership, a frozen review version and a recorded next action.
+
+The access-control review and RBAC foundation [S04, S07] motivate a distinction between role membership and document relationships. A reviewer role does not grant permission to decide every document. Ownership and reviewer assignment must be checked for read, edit and decision operations. The architecture uses one policy service and negative tests for object-level access.
+
+Explicit workflow logic [S08] informs a transition table and tests for forbidden paths. This project uses a finite-state model and does not claim formal Petri-net verification. Its key invariants are that a decision references a fixed version, only the assigned reviewer can decide, and archived documents cannot be edited.
+
+The resulting contribution is an engineering design and evaluation for a bounded departmental setting. The publications do not prove that a new product is commercially superior to established systems. That decision remains conditional on local evidence and a build-versus-configure checkpoint.
