@@ -14,4 +14,9 @@ Deployment succeeded on 20 October. Access remains owner-private. The portable r
 
 Live presentation: Page ID page_86b64ace5e188191af352311d45ab359 in the owner’s library. Prepared 17 slides. This is not a public sharing claim.
 
-Pull request and branch: recorded in the final delivery and PR description after push. No first pre-defense tag is created before the review conditions actually occur.
+Pull request: https://github.com/disasq/electronic-document-flow-system/pull/1
+Branch: EDFS-10-pre-defense-package
+Initial package commit: f2bb11ea819c2792812de2fd6c65c703b230b3c8
+GitHub Actions run: https://github.com/disasq/electronic-document-flow-system/actions/runs/39753901789
+Result: completed successfully.
+EDFS-10 contains the verified PR and check links and is In progress, pending real review. EDFS-1 is Critical and remains In progress. No first pre-defense tag is created before the review conditions actually occur.
