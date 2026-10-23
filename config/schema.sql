@@ -20,12 +20,27 @@ CREATE TABLE document_version (
     id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     document_id bigint NOT NULL REFERENCES document(id),
     version_number integer NOT NULL CHECK (version_number > 0),
-    storage_key text NOT NULL UNIQUE,
-    sha256 char(64) NOT NULL CHECK (sha256 ~ '^[0-9a-f]{64}$'),
-    content_type varchar(100) NOT NULL CHECK (content_type IN ('application/pdf','application/vnd.openxmlformats-officedocument.wordprocessingml.document')),
-    size_bytes bigint NOT NULL CHECK (size_bytes > 0 AND size_bytes <= 20971520),
+    title varchar(120) NOT NULL CHECK (length(trim(title)) > 0),
+    kind varchar(8) NOT NULL CHECK (kind IN ('text','file')),
+    body_text text,
+    storage_key text UNIQUE,
+    sha256 char(64),
+    content_type varchar(100),
+    size_bytes bigint,
     created_by bigint NOT NULL REFERENCES app_user(id),
     created_at timestamptz NOT NULL DEFAULT now(),
+    CHECK (
+        (kind = 'text' AND body_text IS NOT NULL
+            AND length(trim(body_text)) BETWEEN 1 AND 20000
+            AND storage_key IS NULL AND sha256 IS NULL
+            AND content_type IS NULL AND size_bytes IS NULL)
+        OR
+        (kind = 'file' AND body_text IS NULL
+            AND storage_key IS NOT NULL AND sha256 IS NOT NULL
+            AND sha256 ~ '^[0-9a-f]{64}$'
+            AND content_type IN ('application/pdf','application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+            AND size_bytes BETWEEN 1 AND 20971520)
+    ),
     UNIQUE(document_id,version_number),
     UNIQUE(id,document_id)
 );
@@ -69,5 +84,8 @@ CREATE TABLE notification_outbox (
 );
 -- Service transaction rules still required: active identity, ownership,
 -- reviewer is not author, transition guards, If-Match, row locking, audit/outbox.
+-- document.title is a search/display cache of the title in current_version_id;
+-- update both in the same transaction. Every committed document needs one
+-- current version; the temporary NULL breaks the deferred creation cycle.
 -- Use a restricted production DB role. It must have no UPDATE/DELETE permission
 -- on audit_event or document_version. Rehearse this policy in integration tests.

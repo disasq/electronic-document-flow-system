@@ -1,4 +1,4 @@
-# Actual verification on 22 October 2026
+# Actual verification on 22–23 October 2026
 
 ## Executed prototype checks
 
@@ -30,14 +30,18 @@ The browser automation download-event wait timed out after the file downloaded. 
 
 ## Documents and presentation
 
-The report was rendered to 23 pages and every page was inspected for layout. Title style border residue was removed and pagination adjusted to avoid nearly empty continuation pages. The live presentation has 17 editable slides with source notes and was rendered and visually inspected. The three required architecture diagrams have editable .drawio sources and readable SVG and PNG exports. A lifecycle diagram is additional.
+The report was rendered to 25 pages on 23 October after the interview, literature and comparison corrections. The changed pages were visually inspected for layout. The live presentation has 17 editable slides with source notes and was rendered and visually inspected in the earlier preparation. Six architecture diagrams now have editable .drawio sources and readable SVG and PNG counterparts: context, use cases, state, component/container, ER and sequence. XML validity, image visibility and link resolution were checked; exact rendering by the diagram.net application was not checked.
 
 ## Coverage limits
 
-This delivery does not implement production login, server permissions, binary uploads or malware scanning, shared persistence, notifications, load handling, multi-user atomic decisions, recovery or user outcome measurement. The full keyboard journey and a complete accessibility audit have not been run. These remain planned tests in the report. No interviews or supervisor feedback are claimed.
+This delivery does not implement production login, server permissions, binary uploads or malware scanning, shared persistence, notifications, load handling, multi-user atomic decisions, recovery or user outcome measurement. The full keyboard journey and a complete accessibility audit have not been run. These remain planned tests in the report. Dias Saqyp reports ten completed interviews; the original private notes, participant consent records and independent process evidence were not inspected. No supervisor feedback is claimed.
 
 ## Repeatability
 
 Use the README instructions to serve the prototype and run the 15 model checks. Reset demo data returns the original fictional records. Then follow `management/defense_script.md` or the two walkthroughs in `docs/08_prototype.md`. The examples and all browser evidence contain synthetic documents only.
 
-The final YouTrack task overview is retained as `youtrack-tasks.png`. EDFS-10 contains the PR and successful Actions links; its state is In progress. EDFS-1 and EDFS-11 are prioritized Critical, with actual user evidence and supervisor review still outstanding.
+The earlier YouTrack task overview is retained as `youtrack-tasks.png`. EDFS-10 contains the initial PR and successful Actions links; its state is In progress. EDFS-1 is Critical and now assigned to Dias, with the reported interview evidence recorded but peer review outstanding. EDFS-11 is Major, assigned to Dias and open for actual supervisor review and the reviewed submission tag.
+
+## Additional browser check on 23 October 2026
+
+Two tabs of the locally served prototype shared the same origin. Creating a synthetic draft in the second tab disabled **New document** and **Reset demo data** in the first tab and displayed “Data changed in another tab. Reload this tab before making changes.” Changing the first tab's list filter did not re-enable those actions. The observed state is captured in `prototype-stale-tab.png`. This is a browser demonstration of the stale-tab guard, not a substitute for server-side concurrency control.

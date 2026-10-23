@@ -49,19 +49,19 @@
       "id": "FR06",
       "priority": "Must",
       "title": "Submit a frozen version",
-      "acceptance": "The owner assigns a different active reviewer and creates one pending review tied to the current version. Submitted content is locked.",
+      "acceptance": "In the limited single-stage slice, the owner assigns a different active reviewer and creates one pending review tied to the current version. Submitted content is locked. This does not complete a multi-stage organisational route.",
       "test": "T06",
       "component": "Workflow",
-      "coverage": "Prototype"
+      "coverage": "Prototype; single-stage only"
     },
     {
       "id": "FR07",
       "priority": "Must",
       "title": "Decide an assigned review",
-      "acceptance": "Only the assigned reviewer can approve or return an In review document. Return requires a nonblank reason. Duplicate decisions fail.",
+      "acceptance": "In the limited single-stage slice, only the assigned reviewer can approve or return an In review document. Return requires a nonblank reason. Duplicate decisions fail. Organisational final approval may require further stages.",
       "test": "T07",
       "component": "Workflow",
-      "coverage": "Prototype"
+      "coverage": "Prototype; single-stage only"
     },
     {
       "id": "FR08",
