@@ -1,0 +1,8 @@
+{
+  "name": "edfs-predefense-prototype",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Browser prototype and proposed design for the EDFS diploma project",
+  "scripts": {"test": "node --test tests/model.test.cjs"},
+  "engines": {"node": ">=20"}
+}

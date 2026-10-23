@@ -1,0 +1,23 @@
+✔ P01 creation produces draft and initial immutable snapshot (4.818292ms)
+✔ P02 blank title and oversized content rejected without side effects (0.119ms)
+✔ P03 other employee cannot list, read or export private document history (0.56175ms)
+✔ P04 reviewer cannot read unsubmitted draft (0.058667ms)
+✔ P05 author cannot self-approve or assign a non-reviewer (0.118667ms)
+✔ P06 submission freezes version and prevents author edits (0.06025ms)
+✔ P07 administrator cannot decide on behalf of reviewer (0.057208ms)
+✔ P08 return requires reason and preserves pending state after failure (0.0695ms)
+✔ P09 complete return revise resubmit approve archive sequence (0.40875ms)
+✔ P10 stale revision rejected without duplicate event (0.193083ms)
+✔ P11 duplicate approval rejected (0.076333ms)
+✔ P12 only approved documents can be archived by administrator (0.071334ms)
+✔ P13 search is case insensitive and status filter preserves access scope (0.049125ms)
+✔ P14 reviewer cannot create document (0.035792ms)
+✔ P15 review cannot approve a mismatching current version (0.187417ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 51.952

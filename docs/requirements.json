@@ -1,0 +1,197 @@
+{
+  "functional": [
+    {
+      "id": "FR01",
+      "priority": "Must",
+      "title": "Authenticate and terminate a session",
+      "acceptance": "Given valid credentials, create a session. Invalid credentials reveal no account detail. Logout invalidates the session.",
+      "test": "T01",
+      "component": "Identity",
+      "coverage": "Planned backend"
+    },
+    {
+      "id": "FR02",
+      "priority": "Must",
+      "title": "Enforce document access",
+      "acceptance": "An unrelated employee cannot list, read, download, search or export another document. An assigned reviewer sees it after submission. Administrator can inspect records.",
+      "test": "T02",
+      "component": "Policy",
+      "coverage": "Prototype simulation"
+    },
+    {
+      "id": "FR03",
+      "priority": "Must",
+      "title": "Create an internal document",
+      "acceptance": "An employee saves a title of 1\u2013120 characters, type, content and optional deadline. Blank title or content fails without a record.",
+      "test": "T03",
+      "component": "Documents",
+      "coverage": "Prototype text"
+    },
+    {
+      "id": "FR04",
+      "priority": "Must",
+      "title": "Upload a validated binary version",
+      "acceptance": "Accept PDF or DOCX up to 20 MiB only after extension, content, size and malware checks. Invalid or unscanned files cannot be downloaded.",
+      "test": "T04",
+      "component": "Storage",
+      "coverage": "Planned backend"
+    },
+    {
+      "id": "FR05",
+      "priority": "Must",
+      "title": "Keep version snapshots",
+      "acceptance": "Saving a revision creates the next version and preserves older content. Only the owner can edit Draft or Changes requested.",
+      "test": "T05",
+      "component": "Documents",
+      "coverage": "Prototype text"
+    },
+    {
+      "id": "FR06",
+      "priority": "Must",
+      "title": "Submit a frozen version",
+      "acceptance": "The owner assigns a different active reviewer and creates one pending review tied to the current version. Submitted content is locked.",
+      "test": "T06",
+      "component": "Workflow",
+      "coverage": "Prototype"
+    },
+    {
+      "id": "FR07",
+      "priority": "Must",
+      "title": "Decide an assigned review",
+      "acceptance": "Only the assigned reviewer can approve or return an In review document. Return requires a nonblank reason. Duplicate decisions fail.",
+      "test": "T07",
+      "component": "Workflow",
+      "coverage": "Prototype"
+    },
+    {
+      "id": "FR08",
+      "priority": "Must",
+      "title": "Revise and resubmit",
+      "acceptance": "Returned content remains in history. The owner must save a new version before resubmission. A new decision references that version.",
+      "test": "T08",
+      "component": "Workflow",
+      "coverage": "Prototype"
+    },
+    {
+      "id": "FR09",
+      "priority": "Must",
+      "title": "Search within access scope",
+      "acceptance": "Case-insensitive title, ID and type search plus status filter returns only visible documents. Search does not disclose hidden counts.",
+      "test": "T09",
+      "component": "Search and Policy",
+      "coverage": "Prototype"
+    },
+    {
+      "id": "FR10",
+      "priority": "Must",
+      "title": "Record and inspect activity",
+      "acceptance": "Each successful mutation records actor, time, document, version and action. Return records its reason. Protected export matches visible history.",
+      "test": "T10",
+      "component": "Audit",
+      "coverage": "Prototype simulation"
+    },
+    {
+      "id": "FR11",
+      "priority": "Must",
+      "title": "Archive an approved record",
+      "acceptance": "Only administrator can archive Approved. Archived content and decisions are read-only. No hard delete exists in the initial scope.",
+      "test": "T11",
+      "component": "Records",
+      "coverage": "Prototype"
+    },
+    {
+      "id": "FR12",
+      "priority": "Must",
+      "title": "Reject stale updates",
+      "acceptance": "A stale revision token receives 409 in the backend, with no mutation or extra event. A decision cannot refer to a changed version.",
+      "test": "T12",
+      "component": "Workflow and DB",
+      "coverage": "Model simulation"
+    },
+    {
+      "id": "FR13",
+      "priority": "Should",
+      "title": "Notify the next participant",
+      "acceptance": "Successful submission or decision creates an in-app event. Planned delivery retries are deduplicated. Notification failure cannot lose the decision.",
+      "test": "T13",
+      "component": "Outbox",
+      "coverage": "Planned backend"
+    },
+    {
+      "id": "FR14",
+      "priority": "Must",
+      "title": "Administer accounts and roles",
+      "acceptance": "Administrator can activate or deactivate users and assign approved roles. Deactivated users lose sessions and cannot receive new reviews.",
+      "test": "T14",
+      "component": "Identity",
+      "coverage": "Planned backend"
+    },
+    {
+      "id": "FR15",
+      "priority": "Should",
+      "title": "Export a document and its context",
+      "acceptance": "An authorised user downloads a current binary version or text prototype and exports history including version and decision identity.",
+      "test": "T15",
+      "component": "Documents and Audit",
+      "coverage": "Prototype text and JSON"
+    }
+  ],
+  "nonfunctional": [
+    {
+      "id": "NFR01",
+      "priority": "Must",
+      "title": "Server enforced security",
+      "acceptance": "For each protected backend endpoint, unauthenticated requests fail and unrelated users fail. Test tampered IDs and exports. HTTPS and secure cookies required for deployment.",
+      "test": "T02,T16"
+    },
+    {
+      "id": "NFR02",
+      "priority": "Must",
+      "title": "Atomic decisions",
+      "acceptance": "Across 20 simultaneous attempts to decide one pending review, exactly one decision and corresponding audit event commit. Other requests return a conflict.",
+      "test": "T12,T17"
+    },
+    {
+      "id": "NFR03",
+      "priority": "Must",
+      "title": "Response time",
+      "acceptance": "With 30 concurrent sessions and 10000 metadata records on 2 vCPU and 4 GiB RAM, 95th percentile metadata search and command latency is at most 2 seconds after warm-up. File transfer excluded.",
+      "test": "T18"
+    },
+    {
+      "id": "NFR04",
+      "priority": "Must",
+      "title": "Recoverability",
+      "acceptance": "Daily encrypted backup with a 24-hour recovery point target and a 4-hour recovery time target. Restore database and file objects in a rehearsal and verify hashes and references.",
+      "test": "T19"
+    },
+    {
+      "id": "NFR05",
+      "priority": "Must",
+      "title": "Usability and accessibility",
+      "acceptance": "At least 90 percent of the defined critical tasks succeed without moderator intervention in the exploratory study. Core controls support keyboard access, labelled fields and visible focus at 390 and 1366 pixel widths.",
+      "test": "T20,T21"
+    },
+    {
+      "id": "NFR06",
+      "priority": "Must",
+      "title": "Audit protection",
+      "acceptance": "Application users cannot edit or delete audit events through any API. Restrict database permissions and verify mutation rejection. Browser demo history is mutable by its local owner.",
+      "test": "T10,T16"
+    },
+    {
+      "id": "NFR07",
+      "priority": "Must",
+      "title": "Input and file safety",
+      "acceptance": "Escape user-controlled text, check CSRF for session mutations and quarantine all uploaded binaries until validated. Reject scripts, oversized files and misleading types.",
+      "test": "T04,T16"
+    },
+    {
+      "id": "NFR08",
+      "priority": "Should",
+      "title": "Maintainability and deployment",
+      "acceptance": "A clean checkout with documented configuration can start and run automated tests. CI checks forbidden transitions and protected-object scenarios. No credentials or real participant data are tracked.",
+      "test": "T22"
+    }
+  ]
+}
