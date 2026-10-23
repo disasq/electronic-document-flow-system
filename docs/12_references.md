@@ -4,7 +4,7 @@
 
 [S02] A. Anas and T. A. Salim (2022). Tinjauan literatur sistematis pemanfaatan electronic document management system bagi organisasi dalam menunjang manajemen pengetahuan. Berkala Ilmu Perpustakaan dan Informasi 18(2), 259–275. https://doi.org/10.22146/bip.v18i2.5649. Inspected: Publisher abstract and method summary.
 
-[S03] H. Putra and M. Er (2024). The Role of Business Process Management in Digital Innovation and Digital Transformation A Systematic Literature Review. Procedia Computer Science 234, 829–836. https://doi.org/10.1016/j.procs.2024.03.069. Inspected: Publisher abstract and author manuscript identification.
+[S03] H. Putra and Mahendrawathi Er (2024). The Role of Business Process Management in Digital Innovation and Digital Transformation: A Systematic Literature Review. Procedia Computer Science 234, 829–836. https://doi.org/10.1016/j.procs.2024.03.069. Inspected: Publisher abstract and author manuscript identification.
 
 [S04] A. K. Y. S. Mohamed, D. Auer, D. Hofer and J. Küng (2022). A systematic literature review for authorization and access control definitions strategies and models. International Journal of Web Information Systems 18(2/3), 156–180. https://doi.org/10.1108/IJWIS-04-2022-0077. Inspected: Publisher abstract and findings summary.
 
@@ -49,3 +49,13 @@
 [S24] RabbitMQ. Reliability Guide. https://www.rabbitmq.com/docs/reliability. Accessed 19 October 2026. Used for: Asynchronous interaction tradeoff.
 
 [S25] OWASP. File Upload Cheat Sheet. https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html. Accessed 19 October 2026. Used for: Upload validation, quarantine and storage design.
+
+[S26] S. Bayona-Oré and M. Reyes (2025). Challenges in the technological adoption of document management systems. TELKOMNIKA (Telecommunication Computing Electronics and Control) 23(2), 340–348. https://doi.org/10.12928/TELKOMNIKA.v23i2.26372. Inspected: Publisher abstract and citation record; cross-sectional survey of 998 public-sector workers.
+
+[S27] R. Nurbatyrova, B. Japarov, N. Apakhayev, B. Abdulaziz and S. Khushkeldiyeva (2024). Digital Transformation of Archives in the Context of the Introduction of an Electronic Document Management System in Kazakhstan. Preservation, Digital Technology & Culture 53(3), 147–155. https://doi.org/10.1515/pdtc-2024-0017. Inspected: Publisher abstract and Crossref citation record; theoretical state-archives focus.
+
+[S28] d8n.ai by Documentolog. Управление нормативными документами (Management of Internal Regulatory Documents). https://d8n.kz/ru/solutions/norm/. Accessed 23 October 2026. Used for: Current enterprise offering's routed approval, version history, access, action history and configuration needs. Vendor documentation; exact technical semantics remain unverified.
+
+[S29] Register of Trusted Software and Electronic Industry Products of Kazakhstan. Documentolog Platform entry. https://www.rsp.gov.kz/ru/rdpo?page=34. Accessed 23 October 2026. Used for: Local product identity, document-oriented process automation and external-integration claims.
+
+[S30] Documentolog. Первые клиенты уже обновлены на d8n.ai (First customers have been upgraded to d8n.ai), 31 March 2026. https://documentolog.com/blog/pervye-klienty-uzhe-obnovleny-na-d8n-ai. Accessed 23 October 2026. Used for: Vendor-reported migration of Documentolog Platform clients to d8n.ai; does not establish feature equivalence.

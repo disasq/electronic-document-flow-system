@@ -1,6 +1,6 @@
 {
-  "checked": "2026-10-19",
-  "scope": "Targeted scoping review, not an exhaustive systematic review. Abstract-level limits are disclosed.",
+  "checked": "2026-10-23",
+  "scope": "Targeted scoping review begun 19 October 2026 and supplemented 23 October 2026, not an exhaustive systematic review. Abstract-level limits are disclosed.",
   "scientific": [
     {
       "id": "S01",
@@ -14,7 +14,7 @@
       "method": "Cross-sector EDMS literature synthesis",
       "finding": "Adoption depends on technical, individual and organisational factors as well as trust.",
       "limitation": "Heterogeneous sectors cannot establish the needs of the proposed department.",
-      "project_use": "Add adoption questions to interviews and test the complete review journey."
+      "project_use": "Compare adoption themes with the Astana interview notes and test the complete review journey with pilot users."
     },
     {
       "id": "S02",
@@ -32,9 +32,9 @@
     },
     {
       "id": "S03",
-      "authors": "H. Putra and M. Er",
+      "authors": "H. Putra and Mahendrawathi Er",
       "year": "2024",
-      "title": "The Role of Business Process Management in Digital Innovation and Digital Transformation A Systematic Literature Review",
+      "title": "The Role of Business Process Management in Digital Innovation and Digital Transformation: A Systematic Literature Review",
       "venue": "Procedia Computer Science 234, 829–836",
       "url": "https://doi.org/10.1016/j.procs.2024.03.069",
       "kind": "Scientific conference publication",
@@ -113,6 +113,34 @@
       "finding": "Explicit process logic supports reasoning about valid progress and termination.",
       "limitation": "The proposed finite-state workflow is simpler and has not undergone a Petri-net proof.",
       "project_use": "Enumerate transitions and test invalid paths and completion. Retained as a foundation."
+    },
+    {
+      "id": "S26",
+      "authors": "S. Bayona-Oré and M. Reyes",
+      "year": "2025",
+      "title": "Challenges in the technological adoption of document management systems",
+      "venue": "TELKOMNIKA (Telecommunication Computing Electronics and Control) 23(2), 340–348",
+      "url": "https://doi.org/10.12928/TELKOMNIKA.v23i2.26372",
+      "kind": "Scientific research article",
+      "access": "Publisher abstract and citation record",
+      "method": "Cross-sectional correlational survey of 998 public-sector DMS workers",
+      "finding": "Performance expectancy, effort expectancy and social influence correlate with intention to use a DMS.",
+      "limitation": "Non-probability public-sector sample and correlational design do not establish causality or target-organisation needs.",
+      "project_use": "Include ease of use, onboarding and role clarity in prototype feedback without promising an adoption rate."
+    },
+    {
+      "id": "S27",
+      "authors": "R. Nurbatyrova, B. Japarov, N. Apakhayev, B. Abdulaziz and S. Khushkeldiyeva",
+      "year": "2024",
+      "title": "Digital Transformation of Archives in the Context of the Introduction of an Electronic Document Management System in Kazakhstan",
+      "venue": "Preservation, Digital Technology & Culture 53(3), 147–155",
+      "url": "https://doi.org/10.1515/pdtc-2024-0017",
+      "kind": "Scientific research article",
+      "access": "Publisher abstract and Crossref citation record",
+      "method": "Theoretical investigation of archive digitisation and EDMS context in Kazakhstan",
+      "finding": "Describes national archival and document-management context.",
+      "limitation": "State-archive focus cannot establish departmental workflow needs or current legal compliance.",
+      "project_use": "Compare local terminology with the interview notes and validate archival expectations and pilot scope with the supervisor."
     }
   ],
   "official": [
@@ -234,6 +262,27 @@
       "title": "File Upload Cheat Sheet",
       "url": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html",
       "project_use": "Upload validation, quarantine and storage design"
+    },
+    {
+      "id": "S28",
+      "author": "Documentolog",
+      "title": "Управление нормативными документами (Management of Internal Regulatory Documents)",
+      "url": "https://d8n.kz/ru/solutions/norm/",
+      "project_use": "Current enterprise offering's routed approval, version history, access, action history and configuration needs; exact technical semantics unverified"
+    },
+    {
+      "id": "S29",
+      "author": "Register of Trusted Software and Electronic Industry Products of Kazakhstan",
+      "title": "Documentolog Platform entry",
+      "url": "https://www.rsp.gov.kz/ru/rdpo?page=34",
+      "project_use": "Local product identity, document-oriented process automation and external-integration claims"
+    },
+    {
+      "id": "S30",
+      "author": "Documentolog",
+      "title": "Первые клиенты уже обновлены на d8n.ai (First customers have been upgraded to d8n.ai)",
+      "url": "https://documentolog.com/blog/pervye-klienty-uzhe-obnovleny-na-d8n-ai",
+      "project_use": "Vendor-reported migration of Documentolog Platform clients to d8n.ai; feature equivalence not established"
     }
   ]
 }

@@ -3,7 +3,7 @@
 ## Prototype purpose and coverage
 The interactive prototype in prototype/index.html can run without a build step. It contains only synthetic data. Demo personas are Alex Morgan, employee; Jordan Lee, reviewer; Taylor Reed, another employee; and Casey Park, administrator. These are fictional users and do not represent interviews or team contributions. The persona picker simulates role boundaries and is deliberately not an authentication mechanism.
 
-Implemented interactions include creation of a text document, metadata search, state filters, version snapshots, frozen review content, return with a reason, mandatory revision before resubmission, version-aware approval, archive and authorised activity export. A text download illustrates export. Browser storage retains the demonstration between reloads on the same origin.
+Implemented interactions include creation of a text document, metadata search, state filters, version snapshots, frozen review content, return with a reason, mandatory revision before resubmission, version-aware approval, archive and authorised activity export. A text download illustrates export. Browser storage retains the demonstration between reloads on the same origin. The route has **one reviewer**; it cannot represent the multi-stage approvals reported in I01/I04/I07/I10 [see the evidence analysis](02_relevance.md).
 
 ## Scenario A author and reviewer
 1. Select Alex Morgan and create a document with a title, type, deadline and text.
@@ -22,6 +22,6 @@ Implemented interactions include creation of a text document, metadata search, s
 The document list shows status, version and deadline without opening each record. The detail dialog displays the current author and assigned reviewer, a visible next action, version history and activity in one place. Returned documents remain visibly distinct from drafts. Required form labels, focus outlines, native dialogs and responsive layouts support a keyboard walkthrough and smaller screens.
 
 ## Limits of this prototype
-There is no real login, server authorization, durable shared database, binary upload validation, malware scanner, role administration, notification worker or backup. The browser owner can modify local storage and the apparent audit trail. The revision guard illustrates a stale update rule in one state model; it does not provide transactional isolation across browsers. Multiple-tab changes require a reload. Do not use real or confidential documents.
+There is no real login, server authorization, durable shared database, binary upload validation, malware scanner, role administration, notification worker or backup. The browser owner can modify local storage and the apparent audit trail. The revision guard illustrates a stale update rule in one state model; it does not provide transactional isolation across browsers. If another tab changes demo data, this tab blocks writes until reloaded; simultaneous storage writes are still not a production concurrency guarantee. Do not use real or confidential documents.
 
 The screenshots and executed verification record in evidence/ describe what was actually inspected. Production requirements remain planned where the requirements table says so. The next implementation increment should reproduce the same scenarios with server-authenticated identities and PostgreSQL transactions.

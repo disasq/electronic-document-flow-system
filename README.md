@@ -5,11 +5,11 @@ Diploma project at Astana IT University.
 ## Topic
 Development of an Electronic Document Flow System — a web application for managing the lifecycle of internal organizational documents.
 
-## Problem to validate
-Documents exchanged through paper, email and messengers can be difficult to track: users may lose the current version, approval status, deadlines and responsibility. These are initial hypotheses, to be validated through interviews with 3–5 potential users; no interview results are claimed yet.
+## Problem and evidence
+Documents exchanged through paper, email and messengers can be difficult to track: users may lose the current version, approval status, deadlines and responsibility. Dias Saqyp reports that he conducted ten conversations with users in Astana on 12–19 October 2026. Five closely match the internal-document scope; their anonymised observations, limitations and links to requirements are in [the relevance analysis](docs/02_relevance.md) and [evidence log](management/evidence_log.csv). These accounts are interviewer-reported, not measured prevalence or evidence of a signed pilot agreement.
 
 ## Goal
-Design, implement and evaluate a prototype that supports document registration, routing, approval and retrieval with transparent status and access control. Final requirements and scope will be refined after user research and supervisor review.
+Design, implement and evaluate a prototype that supports document registration, routing, approval and retrieval with transparent status and access control. Final requirements and scope will be refined after pilot-process and supervisor review.
 
 ## Preliminary scope
 - Authentication and roles: administrator, document author and reviewer/approver.
@@ -24,8 +24,8 @@ Initially outside scope: legally binding digital signatures, government/bank int
 ## Team
 | Participant | Group | Email | Initial focus |
 | --- | --- | --- | --- |
-| Қазыбай Әли Сәтбекұлы | SE-2424 | 240917@astanait.edu.kz | Interviews, proposal, architecture; backend/API/database planning |
-| Сақып Диас Мұратұлы | SE-2417 | 241895@astanait.edu.kz | Literature, system comparison, prototype; frontend and evaluation planning |
+| Қазыбай Әли Сәтбекұлы | SE-2424 | 240917@astanait.edu.kz | Proposal and architecture review; backend/API/database planning |
+| Сақып Диас Мұратұлы | SE-2417 | 241895@astanait.edu.kz | Conducted the ten reported interviews; literature, system comparison, prototype and evaluation planning |
 
 Supervisor: **Хаймульдин Асқар**.
 
@@ -36,17 +36,17 @@ Deadline: **24 October 2026** (Asia/Almaty).
 
 Planned outputs: validated problem, proposal and scope, at least 12 references including 8 scientific sources, comparison of 3–5 systems using 6–10 criteria, technology decision, acceptance criteria, architecture with editable diagrams, key-scenario prototype, evaluation plan and verifiable participant contributions.
 
-Create the `pre-defense-1` tag only after the deliverables have been reviewed and actual supervisor feedback has been recorded. Interviews, evaluation and supervisor review are pending; this README does not certify their completion.
+Create the `pre-defense-1` tag only on the reviewed version actually submitted. Interview summaries are now recorded; supervisor feedback, genuine peer review of the current changes, user evaluation and the tag remain pending.
 
-## Planned repository organization
-- `docs/research/` — anonymized interview evidence and literature review.
-- `docs/requirements/` — scope, requirements and acceptance criteria.
-- `docs/architecture/` — architecture decisions and editable diagram sources.
-- `docs/evaluation/` — evaluation protocol and later real results.
-- `prototype/` — key-scenario prototype.
-- `frontend/`, `backend/`, `tests/` — implementation after technology selection.
+## Repository organization
+- `docs/` — proposal, user evidence, reviews, requirements, architecture, evaluation plan and report.
+- `diagrams/` — editable draw.io sources with SVG and PNG exports.
+- `prototype/` — runnable browser demonstration using synthetic text documents.
+- `tests/` — executable prototype model checks.
+- `config/` — proposed database schema and example configuration.
+- `management/` and `evidence/` — task map, anonymised summaries, protocols and actual verification records.
 
-These directories are planned and will be added with their first meaningful artifacts.
+`frontend/` and `backend/` will be added when there is meaningful application code; neither is claimed to exist now.
 
 ## Contribution workflow
 Use individual accounts, task-linked branches and commits, and pull requests with peer review. Record actual contributions through commits, PRs and YouTrack issues. Do not fabricate authorship or mark unfinished work as complete.
@@ -54,16 +54,16 @@ Use individual accounts, task-linked branches and commits, and pull requests wit
 This repository is public. Do not commit credentials, real confidential documents or identifiable interview data; use synthetic/anonymized examples.
 
 ## Project tracking
-[YouTrack project EDFS](https://saqypdias.youtrack.cloud/projects/EDFS) · [Task list](https://saqypdias.youtrack.cloud/projects/EDFS/issues)
+[YouTrack project EDFS](https://saqypdias.youtrack.cloud/projects/EDFS) · [Task list](https://saqypdias.youtrack.cloud/issues/EDFS)
 
-The first pre-defense plan is tracked in EDFS-1 through EDFS-11. Use the relevant issue ID in branch names, commit messages and pull requests. Ali Qazybai now has an active YouTrack account. Actual assignments and state are maintained in YouTrack. EDFS-11 remains open for real supervisor review; prepared artifacts do not certify interviews or approval.
+The first pre-defense plan is tracked in EDFS-1 through EDFS-11. Use the relevant issue ID in branch names, commit messages and pull requests. Actual assignees and state are maintained in YouTrack; any mismatch with prose in an issue is listed in [the current status](management/online_status.md). EDFS-11 remains open for real supervisor review. Prepared artifacts do not certify supervisor approval.
 
 
-## Prepared analysis and prototype on 22 October 2026
+## Current analysis and prototype
 
-The proposed baseline is available in the preparation branch and its pull request until peer review and merge. It includes 25 sources with 8 scientific publications, 4 existing systems compared on 8 criteria, 3 technology decisions with 3 alternatives each, 15 functional and 8 non-functional requirements, and a browser prototype. See [the report](docs/EDFS_Report.docx) and the [readiness checklist](docs/11_supervision_readiness.md).
+The initial preparation package was merged through [PR #1](https://github.com/disasq/electronic-document-flow-system/pull/1) on 23 October 2026. GitHub shows no review on that PR, so the merge does not establish peer approval. The correction package is open as [PR #2](https://github.com/disasq/electronic-document-flow-system/pull/2) and requires genuine review before submission. It includes 30 sources with 10 scientific publications, five system families compared on eight criteria, three technology decisions, 15 functional and eight non-functional requirements, editable diagrams and a browser prototype. See [the report](docs/EDFS_Report.docx) and [readiness checklist](docs/11_supervision_readiness.md).
 
-The target implementation is a modular Django application, PostgreSQL and private file storage using HTTP/JSON. The current demonstration is plain HTML/CSS/JavaScript and browser storage. Authentication, server authorization, binary file scanning, shared persistence and production recovery remain planned.
+The target implementation is a modular Django application, PostgreSQL and private file storage using HTTP/JSON. The current demonstration is plain HTML/CSS/JavaScript and browser storage, with one reviewer per submission. Several interviews describe sequential review stages; the next implementation scope needs a documented decision. Authentication, server authorization, binary file scanning, shared persistence and production recovery remain planned.
 
 ### Run the prototype
 
@@ -91,7 +91,7 @@ The 15 checks cover forbidden access, frozen versions, returned revisions, stale
 
 | Location | Contents |
 | --- | --- |
-| `docs/01_proposal.md` and `02_relevance.md` | Proposal, scope, assumptions and real-discussion protocol |
+| `docs/01_proposal.md` and `02_relevance.md` | Proposal, scope, interview evidence and explicit limits |
 | `docs/03_literature.md` and `12_references.md` | Critical scientific analysis and references |
 | `docs/04_existing_systems.md` and `05_technology.md` | Product and technology comparisons |
 | `docs/06_requirements.md` and `requirements.json` | Acceptance criteria and traceability |
@@ -105,6 +105,6 @@ The 17-slide presentation is saved as a live artifact in the owner’s Codex/Spa
 
 ### Remaining evidence before submission
 
-Conduct the real 3–5 discussions or obtain the client agreement, record substantive feedback from Askar Khaimuldin and resulting revisions, and have the other student review this PR. Use actual student accounts for subsequent work. The `pre-defense-1` submission tag must point to the genuinely reviewed commit. No tag or approval is invented by this preparation.
+Confirm the selected pilot's document types and route, record substantive feedback from Askar Khaimuldin and resulting revisions, and obtain a real peer review of the current PR from the other student. Verify committee access to the presentation or export it to a portable file. Use actual student accounts for subsequent work. The `pre-defense-1` submission tag must point to the genuinely reviewed submission commit. No tag or approval is claimed by the current package.
 
 This preparation used an assistant. Assistant commits are labelled as such and do not establish individual student contributions. Existing repository history remains intact. The local `PLAN-` items in `management/backlog.csv` are a suggested extended work plan, not duplicate remote YouTrack issues. The authoritative first-stage tasks are EDFS-1 through EDFS-11.

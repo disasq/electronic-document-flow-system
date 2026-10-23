@@ -9,19 +9,19 @@ Suggested checkpoint: provide proposal, relevance log, comparison, requirements,
 
 ## Checklist for the committee
 | Component | Prepared evidence | Remaining real-world action |
-| 1 Project proposal | Scope, roles, aim, objectives and outcomes | Validate departmental setting |
-| 2 Relevance | Literature context, protocol and blank evidence register | Conduct 3–5 discussions or obtain client agreement |
-| 3 Literature | Eight scientific publications and 25-source register | Deepen abstract-level sources before final thesis |
-| 4 Existing systems | Four systems with eight consistent criteria | Configuration spike after user validation |
+| 1 Project proposal | Scope, roles, aim, objectives and outcomes updated with interview findings | Select and validate a pilot department and route |
+| 2 Relevance | Ten interviewer-reported Astana discussions; five selected for internal scope with an anonymised evidence log | Retain consent/source notes securely; validate summaries and pilot-specific rules where feasible |
+| 3 Literature | Ten scientific publications and 30-source register | Deepen abstract-level sources before final thesis |
+| 4 Existing systems | Five system families including a Kazakhstan offering, with eight consistent criteria | Configuration spike after user validation; confirm edition-specific claims |
 | 5 Technology | Three key decisions and three alternatives each | Confirm team and environment assumptions |
-| 6 Requirements | Fifteen functional and eight quality requirements with tests | Review and baseline with users and supervisor |
-| 7 Architecture | Context, use case, draft component and state diagrams | Revise after feedback |
+| 6 Requirements | Fifteen functional and eight quality requirements with tests, plus two candidate scope changes | Decide multi-stage route and release policy; baseline with users and supervisor |
+| 7 Architecture | Context, use case, draft component, state, ER and sequence diagrams with editable sources and readable exports | Revise after feedback and any CR01 scope decision |
 | 8 UX | Interactive prototype and demonstration script | Test with actual representative users |
 | 9 Verification | Tests, metrics, baseline and study protocol | Run backend and user evaluation later |
-| 10 Management | Backlog, responsibilities, milestones, risks and repository structure | Confirm accounts, contributions and remote review activity |
+| 10 Management | Backlog, responsibilities, milestones, risks and repository structure | Correct YouTrack ownership discrepancies, verify individual contributions and obtain genuine peer review |
 | 11 Supervision | Review packet and comment form | Obtain real feedback and implement changes |
 
 ## First pre defense submission statement
-This version supplies analysis and design artifacts plus an interactive text-document prototype. It does not provide a production application or measured organisational benefit. It discloses missing local validation, unexecuted backend tests and absent supervisor feedback. The original checklist allows an incomplete application at this stage, but does require actual analysis, planning, supervision and progressive contributions. Templates prepare that work but cannot substitute for its occurrence.
+This version supplies analysis and design artifacts plus an interactive text-document prototype. It does not provide a production application or measured organisational benefit. Ten conversations are reported by Dias Saqyp, but a pilot process has not yet been validated. Backend and user outcome tests remain unexecuted, and supervisor feedback is absent. The supplied assignment allows an incomplete application at this stage, but requires actual analysis, planning, supervision and progressive contributions. Templates prepare that work but cannot substitute for its occurrence.
 
 The final submission record must include repository URL, immutable submission tag, YouTrack URL, prototype location, completed-work summary, limitations and outstanding tasks. An unsigned template in management/submission_record.md avoids inventing approval or evidence. During the demonstration, select one real task and trace its acceptance criteria to an artifact, commit, review and verification result. Each student should explain their own changes and the workflow invariants.

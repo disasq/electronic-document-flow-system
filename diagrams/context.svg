@@ -1,1 +1,276 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720"><defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10" fill="#506675"/></marker></defs><rect width="100%" height="100%" fill="white"/><text x="30" y="42" font-family="Arial" font-size="26" font-weight="bold" fill="#142638">EDFS system context</text><path d="M280,185.0 L440,360.0" stroke="#506675" stroke-width="2" fill="none" marker-end="url(#a)"/><text x="360.0" y="262.5" text-anchor="middle" font-family="Arial" font-size="14" fill="#324e60" stroke="white" stroke-width="4" paint-order="stroke">Documents and status</text><path d="M920,185.0 L760,360.0" stroke="#506675" stroke-width="2" fill="none" marker-end="url(#a)"/><text x="840.0" y="262.5" text-anchor="middle" font-family="Arial" font-size="14" fill="#324e60" stroke="white" stroke-width="4" paint-order="stroke">Decisions and reasons</text><path d="M280,575.0 L440,360.0" stroke="#506675" stroke-width="2" fill="none" marker-end="url(#a)"/><text x="360.0" y="457.5" text-anchor="middle" font-family="Arial" font-size="14" fill="#324e60" stroke="white" stroke-width="4" paint-order="stroke">Accounts and records</text><path d="M760,360.0 L920,575.0" stroke="#506675" stroke-width="2" fill="none" marker-end="url(#a)"/><text x="840.0" y="457.5" text-anchor="middle" font-family="Arial" font-size="14" fill="#324e60" stroke="white" stroke-width="4" paint-order="stroke">Delivery requests</text><rect x="40" y="130" width="240" height="110" rx="5" fill="#f5f7f9" stroke="#628173" stroke-width="2"/><text x="160.0" y="173.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" fill="#183647">Employee</text><text x="160.0" y="197.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" fill="#183647">Create and revise</text><rect x="920" y="130" width="240" height="110" rx="5" fill="#f5f7f9" stroke="#628173" stroke-width="2"/><text x="1040.0" y="173.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" fill="#183647">Reviewer</text><text x="1040.0" y="197.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" fill="#183647">Review assigned versions</text><rect x="440" y="290" width="320" height="140" rx="5" fill="#edf5f2" stroke="#628173" stroke-width="2"/><text x="600.0" y="336.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" fill="#183647">EDFS</text><text x="600.0" y="360.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" fill="#183647">Departmental document</text><text x="600.0" y="384.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" fill="#183647">flow system</text><rect x="40" y="520" width="240" height="110" rx="5" fill="#f5f7f9" stroke="#628173" stroke-width="2"/><text x="160.0" y="563.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" fill="#183647">Administrator</text><text x="160.0" y="587.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" fill="#183647">Manage and archive</text><rect x="920" y="520" width="240" height="110" rx="5" fill="#f5f7f9" stroke="#628173" stroke-width="2"/><text x="1040.0" y="563.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" fill="#183647">Mail service</text><text x="1040.0" y="587.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="18" fill="#183647">Planned external system</text></svg>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="518.4pt" viewBox="0 0 864 518.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-23T19:00:20.304592</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 518.4
+L 864 518.4
+L 864 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 201.6 118.8
+L 316.8 226.8
+" clip-path="url(#p1befd4ff59)" style="fill: none; stroke: #506675; stroke-width: 1.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 316.8 262.8
+L 201.6 154.8
+" clip-path="url(#p1befd4ff59)" style="fill: none; stroke: #506675; stroke-width: 1.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 662.4 154.8
+L 547.2 262.8
+" clip-path="url(#p1befd4ff59)" style="fill: none; stroke: #506675; stroke-width: 1.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 547.2 226.8
+L 662.4 118.8
+" clip-path="url(#p1befd4ff59)" style="fill: none; stroke: #506675; stroke-width: 1.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 201.6 396
+L 316.8 280.8
+" clip-path="url(#p1befd4ff59)" style="fill: none; stroke: #506675; stroke-width: 1.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 316.8 302.4
+L 201.6 439.2
+" clip-path="url(#p1befd4ff59)" style="fill: none; stroke: #506675; stroke-width: 1.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 547.2 280.8
+L 662.4 414
+" clip-path="url(#p1befd4ff59)" style="fill: none; stroke: #506675; stroke-width: 1.7; stroke-linecap: square"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 28.8 93.6
+L 201.6 93.6
+L 201.6 172.8
+L 28.8 172.8
+z
+" clip-path="url(#p1befd4ff59)" style="fill: #f5f7f9; stroke: #628173; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 662.4 93.6
+L 835.2 93.6
+L 835.2 172.8
+L 662.4 172.8
+z
+" clip-path="url(#p1befd4ff59)" style="fill: #f5f7f9; stroke: #628173; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 316.8 208.8
+L 547.2 208.8
+L 547.2 309.6
+L 316.8 309.6
+z
+" clip-path="url(#p1befd4ff59)" style="fill: #edf5f2; stroke: #628173; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 28.8 374.4
+L 201.6 374.4
+L 201.6 453.6
+L 28.8 453.6
+z
+" clip-path="url(#p1befd4ff59)" style="fill: #f5f7f9; stroke: #628173; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 662.4 374.4
+L 835.2 374.4
+L 835.2 453.6
+L 662.4 453.6
+z
+" clip-path="url(#p1befd4ff59)" style="fill: #f5f7f9; stroke: #628173; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #142638" x="21.6" y="34.798125" transform="rotate(-0 21.6 34.798125)">EDFS system context</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 308.03461 223.517083
+L 316.8 226.8
+L 312.958987 218.264415
+z
+" clip-path="url(#p1befd4ff59)" style="fill: #506675; stroke: #506675; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 210.36539 158.082917
+L 201.6 154.8
+L 205.441013 163.335585
+z
+" clip-path="url(#p1befd4ff59)" style="fill: #506675; stroke: #506675; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 551.041013 254.264415
+L 547.2 262.8
+L 555.96539 259.517083
+z
+" clip-path="url(#p1befd4ff59)" style="fill: #506675; stroke: #506675; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 658.558987 127.335585
+L 662.4 118.8
+L 653.63461 122.082917
+z
+" clip-path="url(#p1befd4ff59)" style="fill: #506675; stroke: #506675; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 313.236182 289.454987
+L 316.8 280.8
+L 308.145013 284.363818
+z
+" clip-path="url(#p1befd4ff59)" style="fill: #506675; stroke: #506675; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 204.411653 430.272279
+L 201.6 439.2
+L 209.919013 434.910056
+z
+" clip-path="url(#p1befd4ff59)" style="fill: #506675; stroke: #506675; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 654.02522 409.819969
+L 662.4 414
+L 659.471035 405.110075
+z
+" clip-path="url(#p1befd4ff59)" style="fill: #506675; stroke: #506675; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183647" x="115.2" y="128.507188" transform="rotate(-0 115.2 128.507188)">Employee</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183647" x="115.2" y="145.067188" transform="rotate(-0 115.2 145.067188)">Create and revise</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183647" x="748.8" y="128.507188" transform="rotate(-0 748.8 128.507188)">Reviewer</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183647" x="748.8" y="145.067188" transform="rotate(-0 748.8 145.067188)">Review assigned versions</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183647" x="432" y="246.227188" transform="rotate(-0 432 246.227188)">EDFS</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183647" x="432" y="262.787187" transform="rotate(-0 432 262.787187)">Departmental document</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183647" x="432" y="279.347188" transform="rotate(-0 432 279.347188)">flow system</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183647" x="115.2" y="409.307187" transform="rotate(-0 115.2 409.307187)">Administrator</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183647" x="115.2" y="425.867188" transform="rotate(-0 115.2 425.867188)">Manage and archive</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183647" x="748.8" y="409.307187" transform="rotate(-0 748.8 409.307187)">Mail service</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #183647" x="748.8" y="425.867188" transform="rotate(-0 748.8 425.867188)">Planned external system</text>
+   </g>
+   <g id="text_13">
+    <g id="patch_14">
+     <path d="M 204.647156 158.468813
+L 292.152844 158.468813
+L 292.152844 146.811187
+L 204.647156 146.811187
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 8.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #324e60" x="248.4" y="154.957875" transform="rotate(-0 248.4 154.957875)">Drafts and revisions</text>
+   </g>
+   <g id="text_14">
+    <g id="patch_15">
+     <path d="M 198.807469 243.428813
+L 312.392531 243.428813
+L 312.392531 231.771188
+L 198.807469 231.771188
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 8.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #324e60" x="255.6" y="239.917875" transform="rotate(-0 255.6 239.917875)">Current status and history</text>
+   </g>
+   <g id="text_15">
+    <g id="patch_16">
+     <path d="M 545.486531 216.068813
+L 649.713469 216.068813
+L 649.713469 204.411188
+L 545.486531 204.411188
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 8.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #324e60" x="597.6" y="212.557875" transform="rotate(-0 597.6 212.557875)">Decision / return reason</text>
+   </g>
+   <g id="text_16">
+    <g id="patch_17">
+     <path d="M 548.279906 160.628812
+L 652.680094 160.628812
+L 652.680094 148.971187
+L 548.279906 148.971187
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 8.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #324e60" x="600.48" y="157.117875" transform="rotate(-0 600.48 157.117875)">Assigned version / state</text>
+   </g>
+   <g id="text_17">
+    <g id="patch_18">
+     <path d="M 194.079281 333.428812
+L 308.480719 333.428812
+L 308.480719 321.771187
+L 194.079281 321.771187
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 8.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #324e60" x="251.28" y="329.917875" transform="rotate(-0 251.28 329.917875)">Account changes / archive</text>
+   </g>
+   <g id="text_18">
+    <g id="patch_19">
+     <path d="M 208.096688 430.628813
+L 303.103313 430.628813
+L 303.103313 418.971188
+L 208.096688 418.971188
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 8.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #324e60" x="255.6" y="427.117875" transform="rotate(-0 255.6 427.117875)">Records / audit status</text>
+   </g>
+   <g id="text_19">
+    <g id="patch_20">
+     <path d="M 561.639094 362.228813
+L 647.960906 362.228813
+L 647.960906 350.571188
+L 561.639094 350.571188
+z
+" style="fill: #ffffff"/>
+    </g>
+    <text style="font-size: 8.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #324e60" x="604.8" y="358.717875" transform="rotate(-0 604.8 358.717875)">Notification request</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p1befd4ff59">
+   <rect x="0" y="0" width="864" height="518.4"/>
+  </clipPath>
+ </defs>
+</svg>
