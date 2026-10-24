@@ -1,0 +1,25 @@
+# Planned functional test cases
+
+This matrix expands T01–T15 from [the verification plan](../09_verification.md) into setup, steps and expected outcomes. It is a **plan**, not a pass record. Use synthetic data. Server-specific checks remain blocked until the backend exists. Record actual executions in [test_results_template.csv](test_results_template.csv).
+
+Common fixture: active employees A and B, active reviewer R, inactive reviewer X, administrator M, one unrelated employee U, synthetic PDF/DOCX samples and a fixed clock. Start each case from an isolated database or explicitly reset demo state; identify the build and environment in the result record.
+
+| ID | Setup | Steps | Expected result |
+| --- | --- | --- | --- |
+| T01 / FR01 | A is active; backend sessions enabled. | Sign in with valid and invalid credentials; log out; retry the old session. | Valid sign-in establishes a session; invalid sign-in does not disclose account detail; logout invalidates access. |
+| T02 / FR02 | A owns a draft; U is unrelated; R has no review yet. | As U, try list, direct ID, search, download and event export; then submit to R and retry as R. | U cannot discover or access the record; only the assigned R gains review access after submission. |
+| T03 / FR03 | A is signed in. | Save valid title/type/content/deadline, then try blank title, blank content and overlength title. | One valid draft is created; invalid attempts create no record or event and show a field error. |
+| T04 / FR04 | Backend upload and scanning service available; synthetic sample files prepared. | Upload allowed PDF/DOCX and then oversized, renamed executable, misleading-type and scanner-failure samples; attempt downloads. | Only validated, scanned files become downloadable versions; all invalid or unscanned samples are rejected or quarantined. |
+| T05 / FR05 | A owns a draft with version 1; U is unrelated. | Save revised content as A, inspect both versions, attempt an edit as U and after submission. | Version 1 remains unchanged; version 2 contains new content; unauthorised or locked-state edits fail. |
+| T06 / FR06 | A has a valid draft; R is active; B is another employee. | Submit to A (self), inactive reviewer and then R; inspect the pending review and edit controls. | Invalid reviewer choices fail without review; R gets one pending review tied to the frozen current version; edits are locked. |
+| T07 / FR07 | R holds one pending review; U is unrelated. | Try decision as U, return without reason, valid return or approve as R, then repeat the decision. | Only R decides; return needs a reason; exactly one decision and corresponding event are saved. |
+| T08 / FR08 | R has returned A's version 1 with a reason. | Resubmit without saving; save version 2; resubmit; decide as R. | First resubmission fails; second review is bound to version 2; version 1 and its return remain in history. |
+| T09 / FR09 | A owns visible and U owns hidden documents with varied titles, IDs, types and states. | Search mixed case by title, ID and type; combine with status filter as A and U. | Results match query and state within each actor's access scope; hidden records and counts are not exposed. |
+| T10 / FR10 | A and R execute a complete review cycle. | Inspect activity as authorised user; export it; attempt event mutation through API. | Each successful action has actor, timestamp, document, version and action; return reason is retained; export matches the visible history; mutation fails. |
+| T11 / FR11 | One approved and one pending document exist. | Archive approved as A and M; try pending as M; try editing archived content. | Only M can archive Approved; pending and non-admin attempts fail; archived content and decisions remain read-only. |
+| T12 / FR12 | A and B hold the same revision token; R holds a review of a fixed version. | Save a newer version, submit the stale token and attempt a decision against a mismatched version. | Stale or mismatched operations return conflict with no document, review or event mutation. |
+| T13 / FR13 | Backend outbox enabled; R is next actor; delivery worker can be paused. | Submit, interrupt delivery, retry twice and resume; repeat for a decision. | Decision commits despite delivery outage; a pending in-app event is eventually delivered once per key. |
+| T14 / FR14 | M, R and A are active; R holds a session. | As M, change role and deactivate R; retry R's session and attempt to assign R a new review. | Only M administers accounts; R's active access is revoked and R cannot receive new work. |
+| T15 / FR15 | A owns a text or binary document; R is assigned; U is unrelated. | Download current version and export activity as authorised actor; repeat as U. | Authorised content and event context match the current version and review; U receives no file or history. |
+
+For T16–T22, use the setup and expected measures in the verification plan. Browser persona switching can exercise selected UI branches but does not satisfy backend authentication, concurrency, file safety or audit protection cases.

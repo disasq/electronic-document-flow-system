@@ -3,6 +3,8 @@
 ## Verification strategy
 Prototype tests verify state transitions and observable interaction. Later backend tests must verify enforcement at the server and persistence boundary. Tests use synthetic documents until explicit permission exists for anonymised organisational examples. Every Must requirement has a test identifier below. A passing prototype test covers only the corresponding simulated behaviour.
 
+The current executable tests are model-level checks. For the implementation stage, classify T01–T15 as unit and API integration checks against server-enforced permissions and persistence, then run the complete create–return–revise–approve–archive journey as an end-to-end browser check. T04 and T16 exercise invalid or hostile input; T02, T07, T11 and T15 exercise denied actions; T05, T08 and T12 cover version and revision integrity; T10 and T16 cover audit evidence. T17–T19 require a deployed backend and cannot be inferred from the browser prototype. Record the build, environment, observed result and evidence for each execution in the [test result template](evaluation/test_results_template.csv).
+
 | Test | Procedure and expected evidence | Requirement |
 | T01 | Valid and invalid login, session expiry and logout tests | FR01 |
 | T02 | Role and relationship matrix for list, read, search, download and events with tampered IDs | FR02, NFR01 |
@@ -32,6 +34,8 @@ The primary question is whether the system helps users identify a document's sta
 
 Recruit 8–12 volunteer representatives for an exploratory paired study if available. Record the actual sample and limitations if recruitment is smaller. Provide equal brief training and equivalent synthetic document sets. Counterbalance order: half use baseline first and half use EDFS first. Avoid reusing the exact content across conditions. Use the same device, browser, network, document count and tasks.
 
+Before participation, explain the purpose, voluntary nature, tasks, approximate duration, use of synthetic documents and the planned anonymised reporting. Ask for explicit consent to observe and record task-level results; allow withdrawal and omit withdrawn records from analysis. Keep any contact details or signed consent outside the public repository. Assign participant codes and record the consent decision privately. At the end, ask what was confusing, which status or version was difficult to identify, and what the participant would change. Record short anonymised feedback notes alongside task outcomes, separating direct participant statements from observer interpretation.
+
 Tasks are to create and route a request, find the current status and responsible reviewer, process a return and resubmit, and retrieve the approved version with its decision evidence. A multi-stage prerequisite check suggested by I04/I07/I10 is a **future test** for candidate CR01; the current prototype cannot pass it. The observer starts timing after presenting the task and stops at the verified success condition. Record errors, requests for help, completion, abandonment and task time. Use a five-minute task cap and report capped or failed tasks explicitly rather than removing them.
 
 ## Outcome measures and targets
@@ -46,4 +50,4 @@ Tasks are to create and route a request, find the current status and responsible
 The 30 percent goal is a design target, not a published result. Compute time reduction for each matched participant and task as (baseline time minus EDFS time) divided by baseline time. Report condition medians, paired differences, failures and the full anonymised task-level table. Small convenience samples support exploratory conclusions only. Do not infer a general productivity gain from the browser demo or state-model tests.
 
 ## Execution status
-The delivery includes executable prototype model tests and a separate actual verification record. Security, concurrency, performance, recovery and user outcomes remain unmeasured on a production backend. The blank study CSV in management/ provides the fields needed for later collection. Failed acceptance criteria become tracked tasks before the next release tag.
+The delivery includes executable prototype model tests and a separate actual verification record. Security, concurrency, performance, recovery and user outcomes remain unmeasured on a production backend. The blank [study results CSV](../management/study_results.csv) provides fields for later collection; the [evaluation folder](evaluation/) contains reusable templates and a protocol index. Failed acceptance criteria become tracked tasks before the next release tag.

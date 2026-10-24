@@ -36,7 +36,7 @@ Deadline: **24 October 2026** (Asia/Almaty).
 
 Planned outputs: validated problem, proposal and scope, at least 12 references including 8 scientific sources, comparison of 3–5 systems using 6–10 criteria, technology decision, acceptance criteria, architecture with editable diagrams, key-scenario prototype, evaluation plan and verifiable participant contributions.
 
-Create the `pre-defense-1` tag only on the reviewed version actually submitted. Interview summaries are now recorded; supervisor feedback, genuine peer review of the current changes, user evaluation and the tag remain pending.
+Create the `pre-defense-1` tag only on the reviewed version actually submitted. Interview summaries are recorded. PRs #1 and #2 were merged without submitted peer reviews, so the team must record a genuine review on a subsequent substantive PR before its merge. Supervisor feedback and the submission tag remain pending. User evaluation is planned for a later stage.
 
 ## Repository organization
 - `docs/` — proposal, user evidence, reviews, requirements, architecture, evaluation plan and report.
@@ -61,7 +61,7 @@ The first pre-defense plan is tracked in EDFS-1 through EDFS-11. Use the relevan
 
 ## Current analysis and prototype
 
-The initial preparation package was merged through [PR #1](https://github.com/disasq/electronic-document-flow-system/pull/1) on 23 October 2026. GitHub shows no review on that PR, so the merge does not establish peer approval. The correction package is open as [PR #2](https://github.com/disasq/electronic-document-flow-system/pull/2) and requires genuine review before submission. It includes 30 sources with 10 scientific publications, five system families compared on eight criteria, three technology decisions, 15 functional and eight non-functional requirements, editable diagrams and a browser prototype. See [the report](docs/EDFS_Report.docx) and [readiness checklist](docs/11_supervision_readiness.md).
+The initial preparation package was merged through [PR #1](https://github.com/disasq/electronic-document-flow-system/pull/1) on 23 October 2026. The correction package was also merged on 23 October through [PR #2](https://github.com/disasq/electronic-document-flow-system/pull/2). GitHub lists no submitted review for either PR, so these merges do not establish the required peer approval. The package includes 30 sources with 10 scientific publications, five system families compared on eight criteria, three technology decisions, 15 functional and eight non-functional requirements, editable diagrams and a browser prototype. See [the report](docs/EDFS_Report.docx) and [readiness checklist](docs/11_supervision_readiness.md).
 
 The target implementation is a modular Django application, PostgreSQL and private file storage using HTTP/JSON. The current demonstration is plain HTML/CSS/JavaScript and browser storage, with one reviewer per submission. Several interviews describe sequential review stages; the next implementation scope needs a documented decision. Authentication, server authorization, binary file scanning, shared persistence and production recovery remain planned.
 
@@ -97,14 +97,14 @@ The 15 checks cover forbidden access, frozen versions, returned revisions, stale
 | `docs/06_requirements.md` and `requirements.json` | Acceptance criteria and traceability |
 | `docs/07_architecture.md`, `diagrams/`, `config/schema.sql` | Proposed architecture, editable .drawio files and SVG/PNG exports |
 | `prototype/`, `tests/` | Interactive demonstration and executable model tests |
-| `docs/09_verification.md` | Baseline, metrics, conditions and later testing plan |
+| `docs/09_verification.md`, `docs/evaluation/` | Baseline, protocol, test matrix, empty result templates and later testing plan |
 | `management/` | Working plan, evidence forms, risk/review materials and defense script |
 | `evidence/source_register.json` | Checked source metadata, access scope and use |
 
-The 17-slide presentation is saved as a live artifact in the owner’s Codex/Spaces library, Page ID `page_86b64ace5e188191af352311d45ab359`. Open it from the delivered presentation in Codex. No public sharing link or committee access is claimed. The defense script in `management/defense_script.md` is also available in this repository.
+A portable 12-slide first pre-defense draft is in [`docs/EDFS_Predefense_1_2026-10-24.pptx`](docs/EDFS_Predefense_1_2026-10-24.pptx). It was prepared with assistant help from the documented evidence and still needs student and supervisor review. A separate 17-slide presentation exists as a private Codex/Spaces artifact (Page ID `page_86b64ace5e188191af352311d45ab359`); its contents and committee access could not be verified from this account. The defense script is in `management/defense_script.md`.
 
 ### Remaining evidence before submission
 
-Confirm the selected pilot's document types and route, record substantive feedback from Askar Khaimuldin and resulting revisions, and obtain a real peer review of the current PR from the other student. Verify committee access to the presentation or export it to a portable file. Use actual student accounts for subsequent work. The `pre-defense-1` submission tag must point to the genuinely reviewed submission commit. No tag or approval is claimed by the current package.
+Confirm the selected pilot's document types and route, record substantive feedback from Askar Khaimuldin and resulting revisions, and obtain a real peer review by the other student on [PR #3](https://github.com/disasq/electronic-document-flow-system/pull/3) **before merging it**. A review added after the merge cannot satisfy the university's review-before-merge rule for PRs #1 or #2. Verify committee access to the portable presentation and review its final content. Use actual student accounts for subsequent work. The `pre-defense-1` submission tag must point to the genuinely reviewed submission commit. No tag or approval is claimed by the current package.
 
 This preparation used an assistant. Assistant commits are labelled as such and do not establish individual student contributions. Existing repository history remains intact. The local `PLAN-` items in `management/backlog.csv` are a suggested extended work plan, not duplicate remote YouTrack issues. The authoritative first-stage tasks are EDFS-1 through EDFS-11.

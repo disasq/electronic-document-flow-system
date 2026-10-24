@@ -30,7 +30,8 @@ function drawDetail(){
  else $('#doccontent').append(node('div',d.body,'content'));
  if(d.reviewer===actor&&d.status==='in_review'){const label=node('label','Decision comment'),c=node('textarea');c.id='decision-comment';c.rows=3;label.append(c);$('#actions').append(label);action('Approve version '+d.reviewVersion,()=>model.change(state,d.id,actor,'approve',{comment:c.value},openedRevision),'primary');action('Request changes',()=>model.change(state,d.id,actor,'return',{comment:c.value},openedRevision))}
  if(actor==='admin'&&d.status==='approved')action('Archive approved document',()=>model.change(state,d.id,actor,'archive',{},openedRevision),'primary');
- $('#versions').replaceChildren(...d.versions.map(v=>{const b=node('button','v'+v.number,'secondary');b.onclick=()=>{$('#doccontent').replaceChildren(node('p','Read-only snapshot · version '+v.number,'muted'),node('h3',v.title),node('div',v.body,'content'))};return b}));
+ $('#version-preview').replaceChildren();
+ $('#versions').replaceChildren(...d.versions.map(v=>{const b=node('button','v'+v.number,'secondary');b.onclick=()=>{$('#version-preview').replaceChildren(node('p','Read-only snapshot · version '+v.number,'muted'),node('h3',v.title),node('div',v.body,'content'))};return b}));
  $('#history').replaceChildren(...model.history(state,d.id,actor).map(e=>node('li',new Date(e.time).toLocaleString()+' · '+name(e.actor)+' · '+e.action+' · v'+e.version+(e.comment?'\n'+e.comment:''))));
  $('#export').disabled=stale;$('#download').disabled=stale;
 }
