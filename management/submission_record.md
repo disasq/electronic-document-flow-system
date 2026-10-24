@@ -1,18 +1,19 @@
-# First pre defense submission record
-Stage: pre-defense-1
-Planned defense date: 24 October 2026
-Actual repository URL: https://github.com/disasq/electronic-document-flow-system
-Main commit observed 24 October 2026: a47c7a2fd039e376573f0fe3f2e8a4fe11c46afb (merge of PR #5)
-Actual reviewed PR heads: PR #4 at 6f726ff450f3f2bb947c220da03707e0ee052b8e (Al1GaTorr APPROVED at 08:03:39 UTC, before merge at 08:03:46 UTC); PR #5 at c19e1ffffd6ff7e9dbd3255b0dd12609abaf4663 (Al1GaTorr APPROVED at 08:26:04 UTC, before merge at 08:26:13 UTC)
-Actual immutable tag URL:
-YouTrack project URL: https://saqypdias.youtrack.cloud/projects/EDFS
-Prototype URL or local path: prototype/index.html
-Summary of completed and reviewed work: PR #4 cleaned repository records and retained the three required editable diagrams; PR #5 reconciled interview analysis, literature, technology, requirements, the prototype and report. Both received submitted peer approvals and passing CI, linked in management/online_status.md. YouTrack EDFS-1 through EDFS-10 are Done for first-stage criteria. This does not establish review of earlier PRs #1–#3.
-Known limitations: the prototype is browser-only, uses synthetic text and one reviewer; no selected pilot route or measured user outcome; PRs #4–#5 have no written comments or review-driven revisions.
-Outstanding tasks: record real supervisor feedback and resulting changes, verify the actual submission version and access, then create `pre-defense-1` only on that reviewed submission version; review any further substantive PR before merge.
-Supervisor review evidence:
-Committee access verified by and date:
-Qazybai Ali contribution links: https://github.com/disasq/electronic-document-flow-system/pull/4 and https://github.com/disasq/electronic-document-flow-system/pull/5 (review submissions under Al1GaTorr account)
-Saqyp Dias contribution links: https://github.com/disasq/electronic-document-flow-system/pull/4 and https://github.com/disasq/electronic-document-flow-system/pull/5 (branch commits under disasq account; assistant preparation disclosed in repository history)
+# First pre-defense submission record
 
-Status: the reviewed PR #5 baseline is available on main, but the final submission and supervisor review are not recorded. EDFS-11 is in progress and requires real supervisor feedback before the `pre-defense-1` tag, so no tag should be created yet. GitHub lists no submitted peer review for earlier PRs #1–#3. Fill the tag, supervisor and committee fields only from actual evidence. Review approvals without comments do not supply review comments or resulting revisions for the committee demonstration.
+Stage: first pre-defense, 24 October 2026 (Asia/Almaty).
+
+The [Microsoft form](https://forms.cloud.microsoft/r/Yy6AXT5pe3) confirmed receipt of the team's materials on 24 October 2026. Other team members do not need to submit the same materials again.
+
+Repository: https://github.com/disasq/electronic-document-flow-system
+
+Submitted source commit: `712361181c6aa873a35ea70daf4d091fc9bd8390`.
+
+Submission tags: [prob-period-1](https://github.com/disasq/electronic-document-flow-system/releases/tag/prob-period-1) and [pre-defense-1](https://github.com/disasq/electronic-document-flow-system/releases/tag/pre-defense-1). Both point to the submitted source commit.
+
+YouTrack: https://saqypdias.youtrack.cloud/issues/EDFS . All EDFS-1–11 tasks are marked Done. Live tasks require sign-in; the form contains a PDF of the board and example tasks for committee review.
+
+Supervisor: Хаймульдин Асқар Ғазизұлы. Dias Saqyp reports that the supervisor reviewed GitHub and YouTrack, said the first-stage package was ready and allowed form submission. No specific corrections were relayed; no resulting revision is claimed. This report and the receipt are recorded in [EDFS-11](https://saqypdias.youtrack.cloud/issue/EDFS-11).
+
+Contribution and review evidence: [PR #4](https://github.com/disasq/electronic-document-flow-system/pull/4), [PR #5](https://github.com/disasq/electronic-document-flow-system/pull/5) and [PR #6](https://github.com/disasq/electronic-document-flow-system/pull/6) received `Al1GaTorr` approvals before merge. The approvals have no written review comments or documented review-driven revisions. PRs #1–#3 were merged without submitted peer reviews. YouTrack assignments and GitHub history should be used together when discussing individual contributions.
+
+The current deliverable is analysis, architecture, editable diagrams and a browser prototype with synthetic data. The pilot approval route, authenticated backend and measured user evaluation remain for the next stage. The submitted tags remain stable even if later documentation on `main` is updated.

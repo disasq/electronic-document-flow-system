@@ -27,7 +27,7 @@ Initially outside scope: legally binding digital signatures, government/bank int
 | Қазыбай Әли Сәтбекұлы | SE-2424 | 240917@astanait.edu.kz | Proposal and architecture review; backend/API/database planning |
 | Сақып Диас Мұратұлы | SE-2417 | 241895@astanait.edu.kz | Conducted the ten reported interviews; literature, system comparison, prototype and evaluation planning |
 
-Supervisor: **Хаймульдин Асқар**.
+Supervisor: **Хаймульдин Асқар Ғазизұлы**.
 
 Technology selection, requirements, evaluation, repository maintenance and supervisor-review preparation are shared responsibilities.
 
@@ -36,7 +36,7 @@ Deadline: **24 October 2026** (Asia/Almaty).
 
 Planned outputs: an interview-grounded problem statement, proposal and scope, at least 12 references including 8 scientific sources, comparison of 3–5 systems using 6–10 criteria, technology decision, acceptance criteria, architecture with editable diagrams, key-scenario prototype, evaluation plan and traceable participant contributions.
 
-YouTrack shows EDFS-1 through EDFS-10 **Done**; EDFS-11 remains open for actual supervisor feedback, access confirmation and the submitted-version tag. Create `pre-defense-1` only after feedback on the reviewed version subsequently submitted. PRs #1, #2 and #3 were merged without submitted peer reviews. [PR #4](https://github.com/disasq/electronic-document-flow-system/pull/4) and [PR #5](https://github.com/disasq/electronic-document-flow-system/pull/5) received `Al1GaTorr` approvals before merge; neither has written review comments or review-driven revisions. Those approvals do not retroactively review PRs #1–#3. User evaluation is planned for a later stage.
+All eleven YouTrack tasks are marked **Done**. Dias reports that the supervisor reviewed GitHub and YouTrack and allowed the team to submit the form on 24 October 2026; no specific corrections were relayed. The submitted source snapshot is commit `712361181c6aa873a35ea70daf4d091fc9bd8390`, tagged [`prob-period-1`](https://github.com/disasq/electronic-document-flow-system/releases/tag/prob-period-1) for the form and [`pre-defense-1`](https://github.com/disasq/electronic-document-flow-system/releases/tag/pre-defense-1) for the university brief. PRs #1–#3 had no submitted peer reviews. [PR #4](https://github.com/disasq/electronic-document-flow-system/pull/4), [PR #5](https://github.com/disasq/electronic-document-flow-system/pull/5) and [PR #6](https://github.com/disasq/electronic-document-flow-system/pull/6) received `Al1GaTorr` approvals before merge, without written review comments or documented review-driven revisions. User evaluation belongs to the later stage.
 
 ## Repository organization
 - `docs/` — proposal, user evidence, reviews, requirements, architecture, evaluation plan and report.
@@ -57,7 +57,7 @@ This repository is public. Do not commit credentials, real confidential document
 ## Project tracking
 [YouTrack project EDFS](https://saqypdias.youtrack.cloud/projects/EDFS) · [Task list](https://saqypdias.youtrack.cloud/issues/EDFS)
 
-The first pre-defense plan is tracked in EDFS-1 through EDFS-11. Use the relevant issue ID in branch names, commit messages and pull requests. Actual assignees and state are maintained in YouTrack; [the current status](management/online_status.md) records the last verified snapshot: ten tasks Done, EDFS-11 open. Prepared artifacts do not certify supervisor approval.
+The first pre-defense plan is tracked in EDFS-1 through EDFS-11. Use the relevant issue ID in branch names, commit messages and pull requests. Actual assignees and state are maintained in YouTrack; [the current status](management/online_status.md) records the latest verified snapshot. Live YouTrack tasks require an authorized account; the submitted form includes a PDF of the board and task evidence.
 
 
 ## Current analysis and prototype
@@ -76,7 +76,7 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000/prototype/`. The prototype needs no package installation. Use only synthetic data. Demo personas simulate employee, reviewer and administrator rules; they are not real login accounts. Browser storage is local to the current browser and origin.
 
-[Hosted prototype](https://edfs-diploma-ali-dias-2026.ruby-ant-2224.chatgpt.site) is owner-private. It must not be assumed accessible to the committee. The repository copy runs independently and is the portable demonstration.
+The repository copy is the portable demonstration for reviewers.
 
 ### Run meaningful model checks
 
@@ -102,10 +102,8 @@ The 15 checks cover forbidden access, frozen versions, returned revisions, stale
 | `management/` | Interview evidence, task-to-artifact map, current status, defense script and pending review/submission records |
 | `evidence/source_register.json` | Checked source metadata, access scope and use |
 
-A portable 12-slide first pre-defense draft is in [`docs/EDFS_Predefense_1_2026-10-24.pptx`](docs/EDFS_Predefense_1_2026-10-24.pptx). It was prepared with assistant help from the documented evidence and still needs student and supervisor review. A separate 17-slide presentation exists as a private Codex/Spaces artifact (Page ID `page_86b64ace5e188191af352311d45ab359`); its contents and committee access could not be verified from this account. The defense script is in `management/defense_script.md`.
+A portable 12-slide first pre-defense deck is in [`docs/EDFS_Predefense_1_2026-10-24.pptx`](docs/EDFS_Predefense_1_2026-10-24.pptx). The defense script is in `management/defense_script.md`.
 
-### Remaining evidence before submission
+### Next stage
 
-The selected pilot's document types and route still need validation for the later implementation. Record substantive feedback from Askar Khaimuldin and resulting revisions when received. [PR #4](https://github.com/disasq/electronic-document-flow-system/pull/4) and [PR #5](https://github.com/disasq/electronic-document-flow-system/pull/5) were approved by `Al1GaTorr` before merge; PRs #1–#3 remain historically unreviewed. No written review comments or corresponding revisions are recorded for PRs #4–#5. Any later substantive PR also needs another student's review before merge. Verify committee access to the portable presentation and review its final content. EDFS-11 keeps the `pre-defense-1` tag pending until actual supervisor feedback; it must then point to the version actually submitted. No tag or supervisor approval is claimed by the current package.
-
-This preparation used an assistant. Assistant commits are labelled as such and do not establish individual student contributions. Existing repository history remains intact. The authoritative first-stage tasks are EDFS-1 through EDFS-11 in YouTrack; the repository retains a [task-to-artifact map](management/task_artifact_map.csv), not a second local backlog.
+The selected pilot's document types and approval route still need validation for implementation. PRs #1–#3 remain historically unreviewed; later approvals do not retroactively review them. Future substantive changes should receive another student's review before merge. The source tags identify the submitted commit and should stay stable. The authoritative first-stage tasks are EDFS-1 through EDFS-11 in YouTrack; the repository retains a [task-to-artifact map](management/task_artifact_map.csv), not a second local backlog.

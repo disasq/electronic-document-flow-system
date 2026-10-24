@@ -53,4 +53,4 @@ There is no real login, server authorization, durable shared database, binary up
 
 The screenshots and executed verification record in evidence/ describe what was actually inspected. Production requirements remain planned where the requirements table says so. The next implementation increment should reproduce the same scenarios with server-authenticated identities and PostgreSQL transactions.
 
-No team-member or representative-user feedback on this revision is recorded. A future observation should record the participant, date, tasks, exact problems seen and changes made; a blank feedback template or an assistant walkthrough cannot substitute for that evidence.
+No team-member or representative-user feedback on this revision is recorded. A future observation should record the participant, date, tasks, exact problems seen and changes made. A blank feedback template cannot substitute for that evidence.
