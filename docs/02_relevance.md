@@ -16,6 +16,18 @@ Five conversations most directly related to the project's proposed **internal do
 
 The remaining notes cover a project manager (I02, 13 October, Google Meet), sales head (I05, 15 October, Zoom), HR business partner (I06, 15 October, Google Meet), regional branch manager (I08, 17 October, phone), and tender specialist (I09, 18 October, Telegram); all dates are in 2026. They reinforce some version and status concerns but include external-client negotiation, employment papers, courier originals and tender submission, which lie outside the initial system boundary. They should inform later validation or integration decisions rather than silently expand the first-stage product. All ten accounts are considered in the thematic analysis, while I01/I03/I04/I07/I10 form the in-scope evidence set.
 
+## Current-workflow trace for the five selected roles
+
+| Conversation | Reported handoff or status method | Failure described by participant | Bounded design response |
+|---|---|---|---|
+| I01 | Office files and messages across channels; status is checked by chat, call or visit. | Accounting used an older specification after a revised file arrived through Telegram. | Keep a version bound to each submitted review and make the current assignee visible; no claim to replace financial controls. |
+| I03 | A spreadsheet records paper handoffs; the director's paper queue can wait during travel. | A signed order did not reach the next department and had to be reconstructed. | Show handoffs and an event trail for internal records; physical-original custody remains outside the prototype. |
+| I04 | Server folders labelled by review state are used to infer progress. | A draft with internal comments went to a counterparty before legal clearance. | Distinguish draft from approved versions and record legal-review prerequisites as candidate CR01/CR02; external delivery is excluded. |
+| I07 | Jira Service Desk already shows the current assignee for a purchasing request. | Licences were bought from an outdated estimate despite an updated specification. | Test whether frozen versions and ordered approvals add value over existing Jira configuration; do not present basic assignee visibility as a new capability here. |
+| I10 | Documents reach the finance approver by hand without a visible prior-decision chain. | An act was signed before a technical concern reached that approver. | Show earlier decisions and investigate a required technical-review gate before final approval. |
+
+This table uses the interviewer's supplied summaries and anonymised quotations, with dates and formats recorded above and in [the evidence log](../management/evidence_log.csv). It is traceability evidence for the proposal, not validation by one selected client. A reviewer can check each proposed requirement against the reported incident and the excluded process boundary without access to identifying notes.
+
 ## Findings connected to requirements
 
 | Finding | Direct evidence | Implication for the current requirements baseline | Verification to plan |

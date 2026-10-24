@@ -1,10 +1,13 @@
 # Requirements specification
 
 ## Baseline and priorities
-Version 0.2 incorporates the Astana conversations reported by Dias Saqyp on 12–19 October 2026 [I01–I10](02_relevance.md). It remains a proposed baseline awaiting pilot-organisation and supervisor validation. Must requirements define the mandatory later implementation for the **single-reviewer demonstration slice**; Should requirements may be deferred with a recorded decision. Prototype coverage is stated explicitly. Neither client-side role simulation nor passing local model tests proves server security. The observed multi-stage routes are not covered by FR06–FR08 and require an explicit scope decision below.
+Version 0.3 incorporates the Astana conversations reported by Dias Saqyp on 12–19 October 2026 [I01–I10](02_relevance.md). For the first pre-defense, this is an **initial, testable specification**, not a claim that a pilot organisation or supervisor has approved it. Must requirements define the mandatory later implementation for the **single-reviewer demonstration slice**; Should requirements may be deferred with a recorded decision. Prototype coverage is stated explicitly. Neither client-side role simulation nor passing local model tests proves server security. The observed multi-stage routes are not covered by FR06–FR08 and require an explicit scope decision below.
+
+The first-stage deliverable is the requirement definition and acceptance method: 15 functional requirements and 8 quality requirements, with priorities, tests and component ownership. Successful implementation, security, usability and operational targets require the later backend and study described in [the verification plan](09_verification.md). The single-reviewer route is a **limited demonstration scenario** only. It must not be presented as completing the interviewed organisations' legal, technical or executive approval chains.
 
 ## Functional requirements
 | ID and priority | Requirement | Acceptance criterion | Test and component | Current coverage |
+|---|---|---|---|---|
 | FR01 Must | Authenticate and terminate a session | Given valid credentials, create a session. Invalid credentials reveal no account detail. Logout invalidates the session. | T01 Identity | Planned backend |
 | FR02 Must | Enforce document access | An unrelated employee cannot list, read, download, search or export another document. An assigned reviewer sees it after submission. Administrator can inspect records. | T02 Policy | Prototype simulation |
 | FR03 Must | Create an internal document | An employee saves a title of 1–120 characters, type, content and optional deadline. Blank title or content fails without a record. | T03 Documents | Prototype text |
@@ -36,10 +39,11 @@ Version 0.2 incorporates the Astana conversations reported by Dias Saqyp on 12�
 | CR01 Sequential required reviewers | For a document type configured with two ordered stages, stage 2 cannot decide before stage 1, and the document cannot be marked finally approved until both approved the same frozen version. A return requires a new version and restarts the required route according to agreed policy. | Supported as a need by I01/I04/I07/I10; **not implemented** and not in the current MVP commitment. Confirm route and priority with pilot users and supervisor; then specify tests. |
 | CR02 Release check for outgoing documents | A draft or returned version cannot be marked ready for external release; any release action records who released which approved version. | Motivated by I04; **not implemented**. External sending and signatures remain excluded until scope approval. |
 
-The five selected interviews were across different organisations, not a single pilot. Their reports justify investigation but cannot set one organisation's approval policy. Record the decision to add or exclude CR01/CR02, with owner and date, before claiming a validated implementation baseline.
+The five selected interviews were across different organisations, not a single pilot. Their reports justify investigation but cannot set one organisation's approval policy. **Release decision:** if the chosen pilot requires sequential sign-off, CR01 must become a Must requirement before claiming that the later system supports that process. The alternative is an explicitly documented, genuinely single-stage pilot process agreed with its users and supervisor. Record the route, CR01/CR02 decision, owner and date before claiming a validated implementation baseline. The absence of that decision does not prevent review of this first-stage specification, but it prevents a claim of validated pilot scope.
 
 ## Non functional requirements
 | ID and priority | Quality | Acceptance criterion | Tests |
+|---|---|---|---|
 | NFR01 Must | Server enforced security | For each protected backend endpoint, unauthenticated requests fail and unrelated users fail. Test tampered IDs and exports. HTTPS and secure cookies required for deployment. | T02,T16 |
 | NFR02 Must | Atomic decisions | Across 20 simultaneous attempts to decide one pending review, exactly one decision and corresponding audit event commit. Other requests return a conflict. | T12,T17 |
 | NFR03 Must | Response time | With 30 concurrent sessions and 10000 metadata records on 2 vCPU and 4 GiB RAM, 95th percentile metadata search and command latency is at most 2 seconds after warm-up. File transfer excluded. | T18 |
@@ -52,7 +56,23 @@ The five selected interviews were across different organisations, not a single p
 ## Business rules and permissions
 An employee can create documents and read their own records. The owner can edit and submit only Draft or Changes requested. A reviewer can read assigned submitted records and decide only a pending review. Administrator can manage accounts, inspect records and archive Approved, but cannot approve on behalf of the reviewer. No role may edit approved or archived content in place. All backend checks must use authenticated identity, never a client-provided role field.
 
+The matrix states the intended backend policy for FR02, FR05–FR11, FR14 and FR15. `Yes` still depends on the document state and guards below; `No` means the action is denied without a successful mutation or success audit event. A rejected attempt may still be logged separately for security monitoring. A reviewer is considered *assigned* only for the relevant submitted review. The browser prototype illustrates this policy with a persona picker; it does not enforce it against a real authenticated user.
+
+| Action | Owner employee | Assigned reviewer | Unrelated employee | Administrator | Anonymous |
+|---|---|---|---|---|---|
+| Create an internal draft | Yes | No | Yes, own draft | No | No |
+| List, search, read or download a document | Yes | Yes, assigned document | No | Yes | No |
+| Inspect or export its decision history | Yes | Yes, assigned document | No | Yes | No |
+| Edit Draft or Changes requested | Yes | No | No | No | No |
+| Submit or resubmit a version | Yes | No | No | No | No |
+| Approve or return a pending review | No | Yes | No | No | No |
+| Archive an Approved document | No | No | No | Yes | No |
+| Manage users and roles | No | No | No | Yes | No |
+
+The `unrelated employee` column permits creation of that employee's **own** draft; it never grants access to someone else's document. A user who holds more than one role is evaluated against the action and document relationship, not merely the role name. The assigned reviewer cannot approve their own document under FR06. Hidden documents and their counts must not leak through lists, search, direct IDs or exports (FR02, FR09).
+
 | Current state | Command and authorised actor | Next state | Guard |
+|---|---|---|---|
 | Draft | Save by owner | Draft | Valid content, new version |
 | Draft | Submit by owner | In review | Active different reviewer, frozen version |
 | In review | Return by assigned reviewer | Changes requested | Reason required |
@@ -63,3 +83,8 @@ An employee can create documents and read their own records. The owner can edit 
 | Any other pair | Any actor | No change | Reject command and do not emit success event |
 
 A review cycle is a distinct record with an immutable version ID, reviewer, submission time, decision and decision time. The database permits at most one pending review per document. A return starts a new cycle only after revision. Dates are stored in UTC and presented in the department timezone, provisionally Asia/Almaty. Retention duration and delegation on reviewer absence remain open policy questions.
+
+## Deadlines and notifications
+FR03's optional deadline is document metadata shown in the list and detail view. It does not change document state, block approval or create an automatic escalation. The prototype shows the entered date; the later backend must validate and store it consistently with the agreed department timezone. Reminder cadence, delegation and overdue escalation require a separate policy decision with the pilot; none is claimed as implemented.
+
+FR13 is a **Should** requirement for a later implementation: submission or decision would create an in-app event for the next participant, with deduplicated delivery retries. The browser prototype's visible status and history are not a notification service, and no email worker is delivered. Users can still find pending work through FR09 and the task list if FR13 is deferred. An approved decision remains committed even if a notification delivery fails.

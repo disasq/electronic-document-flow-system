@@ -1,12 +1,12 @@
 {
-  "checked": "2026-10-23",
-  "scope": "Targeted scoping review begun 19 October 2026 and supplemented 23 October 2026, not an exhaustive systematic review. Abstract-level limits are disclosed.",
+  "checked": "2026-10-24",
+  "scope": "Targeted scoping review with documented OpenAlex update and Crossref DOI metadata verification on 24 October 2026; earlier exploratory searches were not reproducible. Abstract-level limits are disclosed.",
   "scientific": [
     {
       "id": "S01",
       "authors": "D. Anggraini, K. Adi and J. E. Suseno",
       "year": "2024",
-      "title": "Electronic document management systems implementation across industries systematic analysis",
+      "title": "Electronic document management systems implementation across industries: systematic analysis",
       "venue": "Indonesian Journal of Electrical Engineering and Computer Science 36(1), 264–273",
       "url": "https://doi.org/10.11591/ijeecs.v36.i1.pp264-273",
       "kind": "Scientific review",
@@ -48,7 +48,7 @@
       "id": "S04",
       "authors": "A. K. Y. S. Mohamed, D. Auer, D. Hofer and J. Küng",
       "year": "2022",
-      "title": "A systematic literature review for authorization and access control definitions strategies and models",
+      "title": "A systematic literature review for authorization and access control: definitions, strategies and models",
       "venue": "International Journal of Web Information Systems 18(2/3), 156–180",
       "url": "https://doi.org/10.1108/IJWIS-04-2022-0077",
       "kind": "Scientific review",
@@ -62,7 +62,7 @@
       "id": "S05",
       "authors": "B. Q. Truong, A. Nguyen-Duc and N. T. C. Van",
       "year": "2023",
-      "title": "A Quantitative Review of the Research on Business Process Management in Digital Transformation A Bibliometric Approach",
+      "title": "A Quantitative Review of the Research on Business Process Management in Digital Transformation: A Bibliometric Approach",
       "venue": "Software 2(3), 377–399",
       "url": "https://doi.org/10.3390/software2030018",
       "kind": "Scientific review",
@@ -76,7 +76,7 @@
       "id": "S06",
       "authors": "F. Milani, K. Kubrak and J. Nava",
       "year": "2024",
-      "title": "Strategic redesign of business processes in the digital age A framework",
+      "title": "Strategic redesign of business processes in the digital age: A framework",
       "venue": "Data and Knowledge Engineering 154, 102367",
       "url": "https://doi.org/10.1016/j.datak.2024.102367",
       "kind": "Scientific research article",
@@ -141,6 +141,34 @@
       "finding": "Describes national archival and document-management context.",
       "limitation": "State-archive focus cannot establish departmental workflow needs or current legal compliance.",
       "project_use": "Compare local terminology with the interview notes and validate archival expectations and pilot scope with the supervisor."
+    },
+    {
+      "id": "S31",
+      "authors": "D. R. John, F.-M. Hsu and Y.-J. Chen",
+      "year": "2026",
+      "title": "Electronic Records Management Systems: A Literature Review",
+      "venue": "Information 17(7), 629",
+      "url": "https://doi.org/10.3390/info17070629",
+      "kind": "Scientific review",
+      "access": "Publisher abstract, methods and discussion sections surfaced by search index; Crossref metadata",
+      "method": "Qualitative thematic synthesis of 57 ERMS studies published 2012–2026",
+      "finding": "Governance, infrastructure, staff capacity and interoperability interact in implementation.",
+      "limitation": "English-only selection, varied settings and secondary synthesis limit transfer to a single Astana department; no local effect is measured.",
+      "project_use": "Validate governance rules, metadata and onboarding with pilot users before expanding integrations."
+    },
+    {
+      "id": "S32",
+      "authors": "B. G. Lojonon and R. Alfred",
+      "year": "2025",
+      "title": "Factors Influencing Digital Adoption of Data and Information Management Methods in the Public Sector",
+      "venue": "International Journal of Electronic Government Research 21(1), 1–14",
+      "url": "https://doi.org/10.4018/IJEGR.389245",
+      "kind": "Scientific research article",
+      "access": "ScienceDirect indexed article abstract and Crossref citation record; direct publisher landing page rate-limited",
+      "method": "UTAUT-based survey of 441 public-sector workers in Sabah",
+      "finding": "Performance and effort expectancy, facilitating conditions and social factors predict reported intention to use an EDMS.",
+      "limitation": "One regional public-sector sample and an intention outcome do not establish actual use or causal improvement in the proposed setting.",
+      "project_use": "Measure both perceived ease of use and actual completion of the document-review task."
     }
   ],
   "official": [
@@ -284,5 +312,9 @@
       "url": "https://documentolog.com/blog/pervye-klienty-uzhe-obnovleny-na-d8n-ai",
       "project_use": "Vendor-reported migration of Documentolog Platform clients to d8n.ai; feature equivalence not established"
     }
-  ]
+  ],
+  "search_log": "docs/research/search_log_2026-10-24.md",
+  "scientific_doi_metadata_checked_on": "2026-10-24",
+  "scientific_doi_metadata_source": "Crossref Works API",
+  "official_sources_last_checked_on": "2026-10-23"
 }

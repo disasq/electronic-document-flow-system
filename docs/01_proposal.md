@@ -27,5 +27,17 @@ Out of scope for the initial system: legally qualified electronic signatures, st
 
 Expected outcomes: an evidence-backed requirements baseline, a documented architecture, a tested implementation in the later diploma phase, a usable prototype now, reproducible test materials and a measured comparison. Target improvements are hypotheses until measured.
 
+## Success measures and delivery sequence
+
+The proposed evaluation compares equivalent tasks in the selected department's existing process and in EDFS. The planned targets are at least 90% completion of critical tasks without moderator help, at least a 30% median paired reduction in routing and status lookup time, no wrong-version final decisions in the scripted study, and complete actor/time/version/action records for successful mutations. These are **targets**, not achieved results; the sample, timing rules, failure handling and technical checks are specified in [the evaluation plan](09_verification.md). If the pilot's actual process or participant pool differs from the current assumptions, the baseline and targets will be reviewed before measurement.
+
+| Stage | Deliverable and decision gate |
+|---|---|
+| First pre-defense, 24 October 2026 | Evidence and literature review, alternatives, testable requirements, three editable diagrams, browser demonstration and evaluation protocol; document limitations and obtain supervisor comments when available. |
+| Next implementation increment | Confirm pilot document types and required review stages; implement authenticated creation, version binding, one complete approval route and server-side audit; verify with API and integration checks. |
+| Later evaluation | Run the recorded protocol against the pilot's current process using consented participants and synthetic documents; report task-level results, failures and limitations. |
+
+The key dependencies are pilot-process access, a decision on sequential approval (CR01), and supervisor review. The [management plan](10_management.md) assigns these risks and the later work. Dates after the first pre-defense are deliberately uncommitted until the department and supervisor agree a scope; no pilot or approval is implied by this schedule.
+
 ## Working assumptions
 The department can use a modern browser and nominate reviewers and an administrator. English labels are acceptable for the prototype. The team can learn the proposed backend stack. A single-stage route is sufficient only for the current **demonstration slice**, not for the multi-stage workflows described by several interviewees. These assumptions and the pilot route require explicit user and supervisor review.
