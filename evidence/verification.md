@@ -30,7 +30,7 @@ The browser automation download-event wait timed out after the file downloaded. 
 
 ## Documents and presentation
 
-The report was rendered to 25 pages on 23 October after the interview, literature and comparison corrections. The changed pages were visually inspected for layout. The live presentation has 17 editable slides with source notes and was rendered and visually inspected in the earlier preparation. Six architecture diagrams now have editable .drawio sources and readable SVG and PNG counterparts: context, use cases, state, component/container, ER and sequence. XML validity, image visibility and link resolution were checked; exact rendering by the diagram.net application was not checked.
+The report was rendered to 25 pages on 23 October after the interview, literature and comparison corrections. The changed pages were visually inspected for layout. The live presentation has 17 editable slides with source notes and was rendered and visually inspected in the earlier preparation. Six architecture diagrams were checked in that package. On 24 October, the optional state, ER and sequence diagrams were removed to keep the required set: context, UML use case and draft UML component. Each retained diagram has an editable `.drawio` source and readable SVG and PNG exports. XML validity, image visibility and link resolution were checked; exact rendering by the diagram.net application was not checked.
 
 ## Coverage limits
 
