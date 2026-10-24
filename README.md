@@ -97,7 +97,7 @@ The 15 checks cover forbidden access, frozen versions, returned revisions, stale
 | `docs/06_requirements.md` and `requirements.json` | Acceptance criteria and traceability |
 | `docs/07_architecture.md`, `diagrams/`, `config/schema.sql` | Proposed architecture, editable .drawio files and SVG/PNG exports |
 | `prototype/`, `tests/` | Interactive demonstration and executable model tests |
-| `docs/09_verification.md` | Baseline, metrics, conditions and later testing plan |
+| `docs/09_verification.md`, `docs/evaluation/` | Baseline, protocol, test matrix, empty result templates and later testing plan |
 | `management/` | Working plan, evidence forms, risk/review materials and defense script |
 | `evidence/source_register.json` | Checked source metadata, access scope and use |
 
@@ -105,6 +105,6 @@ A portable 12-slide first pre-defense draft is in [`docs/EDFS_Predefense_1_2026-
 
 ### Remaining evidence before submission
 
-Confirm the selected pilot's document types and route, record substantive feedback from Askar Khaimuldin and resulting revisions, and obtain a real peer review by the other student on a subsequent substantive PR **before merging it**. A review added after the merge cannot satisfy the university's review-before-merge rule for PRs #1 or #2. Verify committee access to the portable presentation and review its final content. Use actual student accounts for subsequent work. The `pre-defense-1` submission tag must point to the genuinely reviewed submission commit. No tag or approval is claimed by the current package.
+Confirm the selected pilot's document types and route, record substantive feedback from Askar Khaimuldin and resulting revisions, and obtain a real peer review by the other student on [PR #3](https://github.com/disasq/electronic-document-flow-system/pull/3) **before merging it**. A review added after the merge cannot satisfy the university's review-before-merge rule for PRs #1 or #2. Verify committee access to the portable presentation and review its final content. Use actual student accounts for subsequent work. The `pre-defense-1` submission tag must point to the genuinely reviewed submission commit. No tag or approval is claimed by the current package.
 
 This preparation used an assistant. Assistant commits are labelled as such and do not establish individual student contributions. Existing repository history remains intact. The local `PLAN-` items in `management/backlog.csv` are a suggested extended work plan, not duplicate remote YouTrack issues. The authoritative first-stage tasks are EDFS-1 through EDFS-11.
