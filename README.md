@@ -34,9 +34,9 @@ Technology selection, requirements, evaluation, repository maintenance and super
 ## First pre-defense milestone
 Deadline: **24 October 2026** (Asia/Almaty).
 
-Planned outputs: validated problem, proposal and scope, at least 12 references including 8 scientific sources, comparison of 3–5 systems using 6–10 criteria, technology decision, acceptance criteria, architecture with editable diagrams, key-scenario prototype, evaluation plan and verifiable participant contributions.
+Planned outputs: an interview-grounded problem statement, proposal and scope, at least 12 references including 8 scientific sources, comparison of 3–5 systems using 6–10 criteria, technology decision, acceptance criteria, architecture with editable diagrams, key-scenario prototype, evaluation plan and traceable participant contributions.
 
-Create the `pre-defense-1` tag only on the reviewed version actually submitted. Interview summaries are recorded. PRs #1, #2 and #3 were merged without submitted peer reviews, so the team must record a genuine review on a subsequent substantive PR before its merge. Supervisor feedback and the submission tag remain pending. User evaluation is planned for a later stage.
+Create the `pre-defense-1` tag only after actual supervisor feedback on the reviewed version subsequently submitted, as tracked in EDFS-11. Interview summaries are recorded. PRs #1, #2 and #3 were merged without submitted peer reviews. [PR #4](https://github.com/disasq/electronic-document-flow-system/pull/4) received a review submission from `Al1GaTorr` before merge. That review does not retroactively review PRs #1–#3. Supervisor feedback and the submission tag remain pending. User evaluation is planned for a later stage.
 
 ## Repository organization
 - `docs/` — proposal, user evidence, reviews, requirements, architecture, evaluation plan and report.
@@ -57,12 +57,12 @@ This repository is public. Do not commit credentials, real confidential document
 ## Project tracking
 [YouTrack project EDFS](https://saqypdias.youtrack.cloud/projects/EDFS) · [Task list](https://saqypdias.youtrack.cloud/issues/EDFS)
 
-The first pre-defense plan is tracked in EDFS-1 through EDFS-11. Use the relevant issue ID in branch names, commit messages and pull requests. Actual assignees and state are maintained in YouTrack; any mismatch with prose in an issue is listed in [the current status](management/online_status.md). EDFS-11 remains open for real supervisor review. Prepared artifacts do not certify supervisor approval.
+The first pre-defense plan is tracked in EDFS-1 through EDFS-11. Use the relevant issue ID in branch names, commit messages and pull requests. Actual assignees and state are maintained in YouTrack; [the current status](management/online_status.md) records the last verified snapshot. EDFS-11 remains open for real supervisor review. Prepared artifacts do not certify supervisor approval.
 
 
 ## Current analysis and prototype
 
-The initial preparation package was merged through [PR #1](https://github.com/disasq/electronic-document-flow-system/pull/1) on 23 October 2026. The correction package followed through [PR #2](https://github.com/disasq/electronic-document-flow-system/pull/2) on 23 October. [PR #3](https://github.com/disasq/electronic-document-flow-system/pull/3), with the portable presentation, evaluation templates and prototype fix, was merged on 24 October. GitHub lists no submitted peer review for these three PRs, so the merges do not establish the required peer approval. The package includes 30 sources with 10 scientific publications, five system families compared on eight criteria, three technology decisions, 15 functional and eight non-functional requirements, editable diagrams and a browser prototype. See [the report](docs/EDFS_Report.docx) and [readiness checklist](docs/11_supervision_readiness.md).
+The initial preparation package was merged through [PR #1](https://github.com/disasq/electronic-document-flow-system/pull/1) on 23 October 2026. The correction package followed through [PR #2](https://github.com/disasq/electronic-document-flow-system/pull/2) on 23 October. [PR #3](https://github.com/disasq/electronic-document-flow-system/pull/3), with the portable presentation, evaluation templates and prototype fix, was merged on 24 October. GitHub lists no submitted peer review for those three PRs. [PR #4](https://github.com/disasq/electronic-document-flow-system/pull/4) streamlined the repository and its required diagrams; `Al1GaTorr` submitted an approval before it was merged on 24 October. The approval has no written or inline comments, so no review-driven revision is claimed. The current literature register has 32 sources including 12 scientific publications; the package also compares five system families on eight criteria, records three key technology decisions, specifies 15 functional and eight non-functional requirements, and includes editable diagrams and a browser prototype. See [the report](docs/EDFS_Report.docx) and [readiness checklist](docs/11_supervision_readiness.md).
 
 The target implementation is a modular Django application, PostgreSQL and private file storage using HTTP/JSON. The current demonstration is plain HTML/CSS/JavaScript and browser storage, with one reviewer per submission. Several interviews describe sequential review stages; the next implementation scope needs a documented decision. Authentication, server authorization, binary file scanning, shared persistence and production recovery remain planned.
 
@@ -93,7 +93,7 @@ The 15 checks cover forbidden access, frozen versions, returned revisions, stale
 | Location | Contents |
 | --- | --- |
 | `docs/01_proposal.md` and `02_relevance.md` | Proposal, scope, interview evidence and explicit limits |
-| `docs/03_literature.md` and `12_references.md` | Critical scientific analysis and references |
+| `docs/03_literature.md`, `docs/research/` and `12_references.md` | Critical scientific analysis, source search record and references |
 | `docs/04_existing_systems.md` and `05_technology.md` | Product and technology comparisons |
 | `docs/06_requirements.md` and `requirements.json` | Acceptance criteria and traceability |
 | `docs/07_architecture.md`, `diagrams/`, `config/schema.sql` | Proposed architecture, editable .drawio files and SVG/PNG exports |
@@ -106,6 +106,6 @@ A portable 12-slide first pre-defense draft is in [`docs/EDFS_Predefense_1_2026-
 
 ### Remaining evidence before submission
 
-Confirm the selected pilot's document types and route, record substantive feedback from Askar Khaimuldin and resulting revisions, and obtain Әли's personal review of [PR #4](https://github.com/disasq/electronic-document-flow-system/pull/4) **before merging it**. The review has been requested; it has not been submitted. A review added after the merge cannot satisfy the university's review-before-merge rule for PRs #1, #2 or #3. Verify committee access to the portable presentation and review its final content. Use actual student accounts for subsequent work. The `pre-defense-1` submission tag must point to the genuinely reviewed submission commit. No tag or approval is claimed by the current package.
+The selected pilot's document types and route still need validation for the later implementation. Record substantive feedback from Askar Khaimuldin and resulting revisions when received. [PR #4](https://github.com/disasq/electronic-document-flow-system/pull/4) was approved by `Al1GaTorr` before merge; PRs #1–#3 remain historically unreviewed. Any later substantive PR also needs another student's review before merge. Verify committee access to the portable presentation and review its final content. EDFS-11 keeps the `pre-defense-1` tag pending until actual supervisor feedback; it must then point to the version actually submitted. No tag or supervisor approval is claimed by the current package.
 
 This preparation used an assistant. Assistant commits are labelled as such and do not establish individual student contributions. Existing repository history remains intact. The authoritative first-stage tasks are EDFS-1 through EDFS-11 in YouTrack; the repository retains a [task-to-artifact map](management/task_artifact_map.csv), not a second local backlog.

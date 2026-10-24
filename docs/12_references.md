@@ -1,16 +1,16 @@
 # References
 
-[S01] D. Anggraini, K. Adi and J. E. Suseno (2024). Electronic document management systems implementation across industries systematic analysis. Indonesian Journal of Electrical Engineering and Computer Science 36(1), 264–273. https://doi.org/10.11591/ijeecs.v36.i1.pp264-273. Inspected: Publisher abstract and citation record.
+[S01] D. Anggraini, K. Adi and J. E. Suseno (2024). Electronic document management systems implementation across industries: systematic analysis. Indonesian Journal of Electrical Engineering and Computer Science 36(1), 264–273. https://doi.org/10.11591/ijeecs.v36.i1.pp264-273. Inspected: Publisher abstract and citation record.
 
 [S02] A. Anas and T. A. Salim (2022). Tinjauan literatur sistematis pemanfaatan electronic document management system bagi organisasi dalam menunjang manajemen pengetahuan. Berkala Ilmu Perpustakaan dan Informasi 18(2), 259–275. https://doi.org/10.22146/bip.v18i2.5649. Inspected: Publisher abstract and method summary.
 
 [S03] H. Putra and Mahendrawathi Er (2024). The Role of Business Process Management in Digital Innovation and Digital Transformation: A Systematic Literature Review. Procedia Computer Science 234, 829–836. https://doi.org/10.1016/j.procs.2024.03.069. Inspected: Publisher abstract and author manuscript identification.
 
-[S04] A. K. Y. S. Mohamed, D. Auer, D. Hofer and J. Küng (2022). A systematic literature review for authorization and access control definitions strategies and models. International Journal of Web Information Systems 18(2/3), 156–180. https://doi.org/10.1108/IJWIS-04-2022-0077. Inspected: Publisher abstract and findings summary.
+[S04] A. K. Y. S. Mohamed, D. Auer, D. Hofer and J. Küng (2022). A systematic literature review for authorization and access control: definitions, strategies and models. International Journal of Web Information Systems 18(2/3), 156–180. https://doi.org/10.1108/IJWIS-04-2022-0077. Inspected: Publisher abstract and findings summary.
 
-[S05] B. Q. Truong, A. Nguyen-Duc and N. T. C. Van (2023). A Quantitative Review of the Research on Business Process Management in Digital Transformation A Bibliometric Approach. Software 2(3), 377–399. https://doi.org/10.3390/software2030018. Inspected: Publisher abstract and methods sections.
+[S05] B. Q. Truong, A. Nguyen-Duc and N. T. C. Van (2023). A Quantitative Review of the Research on Business Process Management in Digital Transformation: A Bibliometric Approach. Software 2(3), 377–399. https://doi.org/10.3390/software2030018. Inspected: Publisher abstract and methods sections.
 
-[S06] F. Milani, K. Kubrak and J. Nava (2024). Strategic redesign of business processes in the digital age A framework. Data and Knowledge Engineering 154, 102367. https://doi.org/10.1016/j.datak.2024.102367. Inspected: Publisher abstract and conclusion excerpts.
+[S06] F. Milani, K. Kubrak and J. Nava (2024). Strategic redesign of business processes in the digital age: A framework. Data and Knowledge Engineering 154, 102367. https://doi.org/10.1016/j.datak.2024.102367. Inspected: Publisher abstract and conclusion excerpts.
 
 [S07] R. S. Sandhu, E. J. Coyne, H. L. Feinstein and C. E. Youman (1996). Role Based Access Control Models. Computer 29(2), 38–47. https://doi.org/10.1109/2.485845. Inspected: Author paper hosted by NIST.
 
@@ -59,3 +59,7 @@
 [S29] Register of Trusted Software and Electronic Industry Products of Kazakhstan. Documentolog Platform entry. https://www.rsp.gov.kz/ru/rdpo?page=34. Accessed 23 October 2026. Used for: Local product identity, document-oriented process automation and external-integration claims.
 
 [S30] Documentolog. Первые клиенты уже обновлены на d8n.ai (First customers have been upgraded to d8n.ai), 31 March 2026. https://documentolog.com/blog/pervye-klienty-uzhe-obnovleny-na-d8n-ai. Accessed 23 October 2026. Used for: Vendor-reported migration of Documentolog Platform clients to d8n.ai; does not establish feature equivalence.
+
+[S31] D. R. John, F.-M. Hsu and Y.-J. Chen (2026). Electronic Records Management Systems: A Literature Review. Information 17(7), 629. https://doi.org/10.3390/info17070629. Inspected: Publisher abstract, methods and discussion sections surfaced by search index, plus Crossref metadata.
+
+[S32] B. G. Lojonon and R. Alfred (2025). Factors Influencing Digital Adoption of Data and Information Management Methods in the Public Sector. International Journal of Electronic Government Research 21(1), 1–14. https://doi.org/10.4018/IJEGR.389245. Inspected: Indexed article abstract and Crossref metadata; direct publisher landing page rate-limited.
