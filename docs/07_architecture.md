@@ -3,7 +3,7 @@
 ## Architectural overview
 The target system is a modular monolith. Browser pages communicate over HTTPS with Django views using JSON commands and multipart file uploads. Identity and policy checks precede each protected operation. Documents, workflow, audit and notifications use explicit service boundaries inside one deployment. PostgreSQL stores metadata, text bodies and workflow state. Private object storage holds validated PDF/DOCX version bytes. This proposed architecture is separate from the delivered browser-only prototype.
 
-The editable `.drawio` files and readable SVG and PNG exports in `diagrams/` are part of this package. Context, UML use case and draft UML component diagrams correspond to the same roles and components as the requirements. The state, ER and sequence diagrams document the lifecycle, proposed data model and main interaction. The diagrams describe the proposed target and the explicitly limited single-reviewer prototype, not a deployed backend.
+The three diagrams required for the first pre-defense are provided in `diagrams/`: system context, UML use case and draft UML component. Each has an editable `.drawio` source and readable SVG and PNG exports. They correspond to the same roles and components as the requirements. They describe the proposed target and the scope of the single-reviewer browser prototype, not a deployed backend. The document lifecycle, data model and transaction flow are specified in prose and in `config/schema.sql`.
 
 ## System context diagram
 ![System context: EDFS, three user roles and planned mail service](../diagrams/context.svg)
@@ -25,30 +25,6 @@ The use cases include access-policy checking as a shared condition. Solid, undir
 [Editable source](../diagrams/components.drawio) · [PNG export](../diagrams/components.png)
 
 Identity implements FR01 and FR14. Policy implements FR02 and NFR01. Documents and storage implement FR03–FR05 and FR15. Workflow implements FR06–FR08, FR11 and FR12. Search, audit and notification components implement FR09, FR10 and FR13 respectively. The component diagram is a draft for the later server implementation.
-
-## Supplementary state diagram
-
-![Permitted document states and guarded transitions](../diagrams/state.svg)
-
-[Editable source](../diagrams/state.drawio) · [PNG export](../diagrams/state.png)
-
-The downward return transition requires an assigned reviewer and a nonblank reason. The upward resubmission transition requires the owner to save a new immutable version first. Approval refers to the submitted version. The current prototype has one reviewer in each review cycle; reported multi-stage routes require a separate scope and design decision.
-
-## Proposed ER diagram
-
-![Proposed entity relationships for documents, immutable versions, reviews, audit and notifications](../diagrams/er.svg)
-
-[Editable source](../diagrams/er.drawio) · [PNG export](../diagrams/er.png)
-
-The ER diagram summarizes the draft SQL schema in `config/schema.sql`. Each committed document has an owner and at least one immutable version; the current version belongs to that document. A review cycle refers to the submitted version and one assigned reviewer. The field list shows additional foreign keys, including version creators, audit actors and notification recipients. `kind = text` stores validated body text; `kind = file` stores metadata for a validated PDF/DOCX object. The SQL file is a design artifact rather than an applied migration.
-
-## Proposed submission and decision sequence
-
-![Proposed one-stage submission and reviewer decision sequence](../diagrams/sequence.svg)
-
-[Editable source](../diagrams/sequence.drawio) · [PNG export](../diagrams/sequence.png)
-
-The employee submits the current frozen version with an assigned reviewer and a revision token. The proposed service checks ownership, reviewer eligibility and version state, then commits the pending review, audit event and notification outbox record together with the `in_review` transition. The reviewer reads the assigned version and submits approval or a return reason. A second transaction checks the pending assignment and revision before saving the decision, audit and outbox record. A stale revision returns 409; queued notification delivery follows the committed change. This is the proposed server interaction for a one-stage review, not an implemented route in the browser prototype.
 
 ## Data and consistency model
 User has a role and active flag. Document stores owner, current display title, type, status, current version ID and revision counter. DocumentVersion stores a unique document and version number, an immutable title and exactly one content form: a text body, or a validated PDF/DOCX object key with hash, content type and byte size. Both forms record creator and creation time. ReviewCycle references exactly one version and reviewer. AuditEvent stores event ID, actor, document, version, action, timestamp and safe context. NotificationOutbox stores an event key, recipient, status, attempt count and next retry time.

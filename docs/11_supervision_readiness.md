@@ -15,7 +15,7 @@ Suggested checkpoint: provide proposal, relevance log, comparison, requirements,
 | 4 Existing systems | Five system families including a Kazakhstan offering, with eight consistent criteria | Configuration spike after user validation; confirm edition-specific claims |
 | 5 Technology | Three key decisions and three alternatives each | Confirm team and environment assumptions |
 | 6 Requirements | Fifteen functional and eight quality requirements with tests, plus two candidate scope changes | Decide multi-stage route and release policy; baseline with users and supervisor |
-| 7 Architecture | Context, use case, draft component, state, ER and sequence diagrams with editable sources and readable exports | Revise after feedback and any CR01 scope decision |
+| 7 Architecture | Required context, UML use case and draft UML component diagrams, each with an editable source and readable exports | Revise after feedback and any CR01 scope decision |
 | 8 UX | Interactive prototype and demonstration script | Test with actual representative users |
 | 9 Verification | Tests, metrics, baseline and study protocol | Run backend and user evaluation later |
 | 10 Management | Backlog, responsibilities, milestones, risks and repository structure | Correct YouTrack ownership discrepancies, verify individual contributions and obtain genuine peer review |
