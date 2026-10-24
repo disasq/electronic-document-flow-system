@@ -9,6 +9,6 @@ This folder holds the evidence and coordination records for the diploma project.
 | [online_status.md](online_status.md) | Snapshot of observed GitHub and YouTrack state, including open gaps. |
 | [defense_script.md](defense_script.md) | Suggested speaking and demonstration sequence; students should revise it to reflect their actual work. |
 | [supervisor_review.md](supervisor_review.md) | Unfilled record for real supervisor comments and resulting changes. Its existence is not feedback or approval. |
-| [submission_record.md](submission_record.md) | Records the PR #4 reviewed baseline and leaves the actual tag, committee access and supervisor evidence open until verified. |
+| [submission_record.md](submission_record.md) | Records the PRs #4–#5 reviewed baseline and leaves the actual tag, committee access and supervisor evidence open until verified. |
 
 The proposed future work is described in [project milestones and risks](../docs/10_management.md), with actionable tasks maintained in YouTrack. [Evaluation templates](../docs/evaluation/) remain blank until real technical or participant results exist. Keep identifiable interview notes, consent records and confidential organisational documents outside this public repository.
