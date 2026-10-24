@@ -10,12 +10,13 @@ The package was prepared with assistance. Prepared files and any assistant commi
 | 12–19 October 2026 | User conversations | Dias (user-reported) | Ten summaries supplied; five selected for the internal scope |
 | 22 October 2026 | Analysis, diagrams and prototype package | Assistant-prepared branch | Package committed; model tests executed; student review still needed |
 | 23 October 2026 | Initial package merged as PR #1 | Repository history | Merge recorded; GitHub shows no submitted peer review |
-| 23–24 October 2026 | Audit corrections, route decision and review | Both students, supervisor for scope | Current PR reviewed, access checked and open risks stated; real feedback recorded if obtained |
+| 23 October 2026 | Audit corrections merged as PR #2 | Repository history | Merge recorded; GitHub shows no submitted peer review |
+| 24 October 2026 | Route decision, genuine review and access check | Both students, supervisor for scope | A subsequent substantive PR receives another student's review before merge; access and open risks recorded; real supervisor feedback recorded if obtained |
 | 24 October 2026 | First pre-defense | Both | Tag reviewed submission, disclose open limitations |
 | After first pre-defense | Authenticated vertical slice | Ali, approved baseline | End-to-end backend test of creation through approval |
 | Later agreed checkpoint | Usability and load evaluation | Dias and Ali | Raw anonymised results and reproducible conditions |
 
-The past rows state what the available evidence supports; the 23–24 October review is a target, not a claimed completed meeting. Maintain the same repository through later submissions. Links and actual remote state are recorded in management/online_status.md. Several original YouTrack deadlines have passed while their tasks remain open; replan with the owners rather than silently changing historical dates.
+The past rows state what the available evidence supports; the 24 October review is a target, not a claimed completed meeting. Maintain the same repository through later submissions. Links and actual remote state are recorded in management/online_status.md. Several original YouTrack deadlines have passed while their tasks remain open; replan with the owners rather than silently changing historical dates.
 
 ## Risk register
 | Risk | Likelihood and impact | Owner | Mitigation and trigger |
@@ -32,6 +33,6 @@ The past rows state what the available evidence supports; the 23–24 October re
 ## Git and YouTrack workflow
 Use the YouTrack project linked in the README. Each task needs an actual student assignee, priority, expected artifact, acceptance criteria and due date. The prepared backlog contains planned fields; the live issue is authoritative. Reconcile the observed assignee/description conflicts listed in management/online_status.md with the actual work. Only mark a task Done when its acceptance criteria have been reviewed.
 
-Use task IDs in branch names such as EDFS-12-approval-policy and in commit or PR descriptions. Add the resulting commit or PR link back to the task. Keep main as the reviewed baseline and submit coherent changes through PRs. Documentation and diagrams require review too. The repository includes PR and issue templates, a CI workflow and an ignore file. Do not commit passwords, API keys, real participant notes or runtime data.
+Use task IDs in branch names such as EDFS-12-approval-policy and in commit or PR descriptions. Add the resulting commit or PR link back to the task. For future work, keep main as a reviewed baseline by submitting coherent changes through PRs; its present history contains two unreviewed merges. Documentation and diagrams require review too. The repository includes PR and issue templates, a CI workflow and an ignore file. Do not commit passwords, API keys, real participant notes or runtime data.
 
-Before submission, confirm committee and supervisor access to the repository, presentation and YouTrack as applicable, obtain genuine review of the current PR, merge reviewed work and create pre-defense-1 at the actual reviewed submission commit. PR #1 has already been merged without a recorded review; do not retroactively call it reviewed. Do not move submitted tags. Later stages use pre-defense-2 and final-pre-defense. Do not tag an unreviewed package as approved merely because the date has arrived.
+Before submission, confirm committee and supervisor access to the repository, presentation and YouTrack as applicable. PRs #1 and #2 were merged without submitted reviews; do not retroactively call either reviewed. The university requires another student to review each substantive PR before merge. Have the next substantive PR genuinely reviewed before merging it, then create pre-defense-1 at the actual reviewed submission commit. Do not move submitted tags. Later stages use pre-defense-2 and final-pre-defense. Do not tag an unreviewed package as approved merely because the date has arrived.

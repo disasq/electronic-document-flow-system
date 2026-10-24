@@ -1,0 +1,5 @@
+# Evaluation protocol and result templates
+
+The [verification and evaluation plan](../09_verification.md) is the canonical strategy and T01–T22 requirement-to-test mapping. The [functional test matrix](test_matrix.md) gives setup, steps and expected outcomes for T01–T15. The [paired-study protocol](protocol.md) gives the session procedure, consent, feedback collection and analysis steps. These distinguish current model-level checks from later backend, browser and participant studies. Do not enter planned checks as passed results.
+
+For a future implementation run, copy [test_results_template.csv](test_results_template.csv), record one row per test and build, and link evidence from the actual execution. For the planned paired usability study, copy [study_results_template.csv](study_results_template.csv), use participant codes and synthetic documents, and follow the recruitment, consent, counterbalancing, timing, feedback and analysis steps in the protocol. Keep identifiable recruitment and consent records private. The blank [collection file](../../management/study_results.csv) is prepared for anonymised outcomes; it contains no participant results yet.

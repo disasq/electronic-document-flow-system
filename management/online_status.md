@@ -1,9 +1,9 @@
 # Verified online status
 
-Checked 23 October 2026 (Asia/Almaty). This records observed state, not a claim of supervisor approval.
+GitHub rechecked 24 October 2026 (Asia/Almaty); YouTrack observations below remain from 23 October. This records observed state, not a claim of supervisor approval.
 
 Repository: https://github.com/disasq/electronic-document-flow-system
-Default branch: `main`, public. Its observed head before this audit was `310f117`, the merge of [PR #1](https://github.com/disasq/electronic-document-flow-system/pull/1) on 23 October. GitHub showed **no submitted reviews** for PR #1. The prior successful [Actions run](https://github.com/disasq/electronic-document-flow-system/actions/runs/39753901789) checks model code, not academic peer approval. The correction package is open as [PR #2](https://github.com/disasq/electronic-document-flow-system/pull/2) from `EDFS-10-predefense-audit`; it has not been peer reviewed or merged.
+Default branch: `main`, public. Its observed head on 24 October was `5109f90fedcb7da5b37f6a345f458d016f8109c0`, the merge of [PR #2](https://github.com/disasq/electronic-document-flow-system/pull/2) at 20:01 on 23 October (Asia/Almaty). GitHub returned **no submitted reviews** for [PR #1](https://github.com/disasq/electronic-document-flow-system/pull/1) or PR #2. The successful [PR #2 Actions run](https://github.com/disasq/electronic-document-flow-system/actions/runs/39973948216) checks prototype code, not academic peer approval. A later review cannot make either earlier merge compliant with the university's requirement for another team member to review changes **before** merging. Record genuine review on a subsequent substantive PR before its merge.
 
 The repository homepage still showed `codex` in Contributors on 23 October. The current `main` commit history has authors `disasq` and `Al1GaTorr`; the original [PR #1 commit history](https://github.com/disasq/electronic-document-flow-system/pull/1/commits) retains assistant-authored commits. GitHub says contributor displays may take about 24 hours to refresh after history changes; the owner can ask [GitHub Support](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-a-projects-contributors) to refresh incorrect statistics if they persist. Historical PR attribution should remain truthful.
 
@@ -14,6 +14,6 @@ Dias Saqyp reports ten Astana interviews on 12–19 October 2026 and permission 
 
 Portable prototype: `prototype/index.html` in this repository. [Hosted copy](https://edfs-diploma-ali-dias-2026.ruby-ant-2224.chatgpt.site) remains owner-private; do not assume committee access. The prototype is browser-only, uses synthetic documents and one review stage.
 
-Presentation: 17 slides exist as a private Codex/Spaces artifact, Page ID `page_86b64ace5e188191af352311d45ab359`. No portable export or committee access was verified during this audit.
+Presentation: a portable 12-slide draft is in `docs/EDFS_Predefense_1_2026-10-24.pptx` and needs student/supervisor review. A separate 17-slide Codex/Spaces artifact (Page ID `page_86b64ace5e188191af352311d45ab359`) remains private and could not be inspected from this account. Committee access to the portable file still needs confirmation.
 
-No real supervisor feedback, new peer review or `pre-defense-1` tag was observed. The tag must identify the version actually reviewed and submitted; do not move it after release.
+No real supervisor feedback, peer review on either merged PR or `pre-defense-1` tag was observed. The tag must identify the version actually reviewed and submitted; do not move it after release.
