@@ -17,3 +17,5 @@ Portable prototype: `prototype/index.html` in this repository. [Hosted copy](htt
 Presentation: a portable 12-slide draft is in `docs/EDFS_Predefense_1_2026-10-24.pptx` and needs student/supervisor review. A separate 17-slide Codex/Spaces artifact (Page ID `page_86b64ace5e188191af352311d45ab359`) remains private and could not be inspected from this account. Committee access to the portable file still needs confirmation.
 
 No real supervisor feedback, peer review on any of the three merged PRs or `pre-defense-1` tag was observed. The tag must identify the version actually reviewed and submitted; do not move it after release.
+
+[PR #4](https://github.com/disasq/electronic-document-flow-system/pull/4) is open with a review request to `Al1GaTorr`. It trims the repository to the three required diagrams, removes duplicate or blank project records, and updates the report and portable presentation. Requesting a review is not evidence that Әли personally examined the changes or submitted a GitHub review. Keep the PR open until that occurs.
