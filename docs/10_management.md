@@ -12,8 +12,8 @@ The package was prepared with assistance. Prepared files and any assistant commi
 | 23 October 2026 | Initial package merged as PR #1 | Repository history | Merge recorded; GitHub shows no submitted peer review |
 | 23 October 2026 | Audit corrections merged as PR #2 | Repository history | Merge recorded; GitHub shows no submitted peer review |
 | 24 October 2026 | Evaluation materials and presentation merged as PR #3 | Repository history | Merge recorded; GitHub shows no submitted peer review |
-| After 24 October 2026 | Route decision, genuine review and access check | Both students, supervisor for scope | A subsequent substantive PR receives another student's review before merge; access and open risks recorded; real supervisor feedback recorded when received |
-| 24 October 2026 | First pre-defense | Both | Tag reviewed submission, disclose open limitations |
+| Before actual first pre-defense submission (date pending) | Route decision, genuine review and access check | Both students, supervisor for scope | A substantive PR receives another student's review before merge; access and open risks recorded; real supervisor feedback recorded when received |
+| 24 October 2026 planned; completion pending | First pre-defense submission | Both | Tag the reviewed version actually submitted and disclose open limitations |
 | After first pre-defense | Authenticated vertical slice | Ali, approved baseline | End-to-end backend test of creation through approval |
 | Later agreed checkpoint | Usability and load evaluation | Dias and Ali | Raw anonymised results and reproducible conditions |
 
